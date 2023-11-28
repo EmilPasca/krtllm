@@ -1,5 +1,18 @@
 # Karate DSL LLM Assisted Test Case Generator 
 
+## Karate Project Builder
+The main fields you need to modify are:
+`api_name = "Swagger_Petstore_Lite"` 
+
+## Karate Feature File Producer
+This script will write the Karate DSL feature files using the output files from the oas_decomposer script, they will writen in the output directory in named as the API.
+
+### Path to OpenAPI file
+
+process_openapi_file('input/petstore_lite.yaml')
+
+### Name of the folder with the ouptufiles,tThis will be used in oas_decomposer.py
+api_name = 'Swagger_Petstore_Lite'  
 
 ## OAS/Swagger File Decomposer
 
@@ -21,18 +34,4 @@ This script will:
 
 Requirements:
 - Java 17+
-- Maven 3.6+ 
-
-## Karate Project Builder
-The main fields you need to modify are:
-`api_name = "Swagger_Petstore_Lite"` 
-
-## Karate Feature File Producer
-    
-### Path to OpenAPI file
-
-process_openapi_file('input/petstore_lite.yaml')
-
-### Name of the folder with the ouptufiles,tThis will be used in oas_decomposer.py
-api_name = 'Swagger_Petstore_Lite'  
-
+- Maven 3.6+
