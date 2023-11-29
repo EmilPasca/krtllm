@@ -47,16 +47,37 @@ def generate_karate_test_scenario(oas_json):
 
     # Set up the prompt with the sanitized OAS JSON content
 
-    prompt = f"Write Karate DSL scenario, taking in consideration API Securities like SQL injection, Broken Authentication, CSRF" \
-             f" or other vulnerability exploits. Provide only the required karate DSL code which is required in the java feature " \
-             f" scenario code for the given case. Include the feature name, scenario name, Given, When, " \
-             f" Then format and request parameters or body and final assertions. Don't include any other explanations" \
-             f" or information related to Karate DSL, or provided code." \
-             f"The scenario should include the endpoint path, request headers, and a JSON body (if required) with " \
-             f"all required fields as per the schema. Validate the response to ensure it has the required status code and "\
-             f"the response body matches the expected schema. Include dynamic data handling for fields where applicable "\
-             f"and ensure that common setup steps are in a Background section. Handle potential error responses gracefully"\
-             f" for the following oas specification:\n\"{oas_json_string}\" \n "
+    # prompt = f"Write Karate DSL scenario, taking in consideration API Securities like SQL injection, Broken Authentication, CSRF" \
+    #          f" or other vulnerability exploits. Provide only the required karate DSL code which is required in the java feature " \
+    #          f" scenario code for the given case. Include the feature name, scenario name, Given, When, " \
+    #          f" Then format and request parameters or body and final assertions. Don't include any other explanations" \
+    #          f" or information related to Karate DSL, or provided code." \
+    #          f"The scenario should include the endpoint path, request headers, and a JSON body (if required) with " \
+    #          f"all required fields as per the schema. Validate the response to ensure it has the required status code and "\
+    #          f"the response body matches the expected schema. Include dynamic data handling for fields where applicable "\
+    #          f"and ensure that common setup steps are in a Background section. Handle potential error responses gracefully"\
+    #          f" for the following oas specification:\n\"{oas_json_string}\" \n "
+
+    prompt = (
+        "Write a Karate DSL scenario for API security testing, considering vulnerabilities like SQL injection, "
+        "Broken Authentication, CSRF, and others. The scenario should be structured as follows:\n\n"
+        "Feature: [Feature Name]\n"
+        "    Background:\n"
+        "         * [Background details such as URL path/headers]\n"
+        "    Scenario: [Scenario Name]\n"
+        "         * Scenario instructions including:\n"
+        "         * Given url\n"
+        "         * And request body\n"
+        "         * When method POST/PUT/GET\n"
+        "         * Then assertions\n\n"
+        "Include only the required Karate DSL code for the java feature scenario code. "
+        "The scenario should include the endpoint path, request headers, and a JSON body (if required) with "
+        "all required fields as per the schema. Validate the response to ensure it has the required status code and "
+        "the response body matches the expected schema. Include dynamic data handling for fields where applicable "
+        "and ensure that common setup steps are in the Background section. Handle potential error responses gracefully. "
+        "Use the following OpenAPI specification for the scenario generation:\n\n"
+        f"\"{oas_json_string}\"\n"
+    )
 
     model = "Mistral OpenOrca"
     logger.info(f"The following prompt was sent: \n {prompt} ")
