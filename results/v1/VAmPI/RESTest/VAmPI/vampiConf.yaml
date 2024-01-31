@@ -1,0 +1,165 @@
+---
+auth:
+  required: true
+  queryParams: {}
+  headerParams: {}
+  apiKeysPath: null
+  headersPath: null
+  oauthPath: null
+testConfiguration:
+  operations:
+  - testPath: /createdb
+    operationId: api_views.main.populate_db
+    method: get
+    testParameters: null
+    expectedResponse: 200
+  - testPath: /
+    operationId: api_views.main.basic
+    method: get
+    testParameters: null
+    expectedResponse: 200
+  - testPath: /users/v1
+    operationId: api_views.users.get_all_users
+    method: get
+    testParameters: null
+    expectedResponse: 200
+  - testPath: /users/v1/_debug
+    operationId: api_views.users.debug
+    method: get
+    testParameters: null
+    expectedResponse: 200
+  - testPath: /users/v1/register
+    operationId: api_views.users.register_user
+    method: post
+    testParameters:
+    - name: body
+      in: body
+      weight: null
+      generators:
+      - type: BodyGenerator
+        genParameters: []
+        valid: true
+    expectedResponse: 200
+  - testPath: /users/v1/login
+    operationId: api_views.users.login_user
+    method: post
+    testParameters:
+    - name: body
+      in: body
+      weight: null
+      generators:
+      - type: BodyGenerator
+        genParameters: []
+        valid: true
+    expectedResponse: 200
+  - testPath: "/users/v1/{username}"
+    operationId: api_views.users.get_by_username
+    method: get
+    testParameters:
+    - name: username
+      in: path
+      weight: null
+      generators:
+      - type: RandomEnglishWord
+        genParameters:
+        - name: maxWords
+          values:
+          - 1
+          objectValues: null
+        valid: true
+    expectedResponse: 200
+  - testPath: "/users/v1/{username}"
+    operationId: api_views.users.delete_user
+    method: delete
+    testParameters:
+    - name: username
+      in: path
+      weight: null
+      generators:
+      - type: RandomEnglishWord
+        genParameters:
+        - name: maxWords
+          values:
+          - 1
+          objectValues: null
+        valid: true
+    expectedResponse: 200
+  - testPath: "/users/v1/{username}/email"
+    operationId: api_views.users.update_email
+    method: put
+    testParameters:
+    - name: username
+      in: path
+      weight: null
+      generators:
+      - type: RandomEnglishWord
+        genParameters:
+        - name: maxWords
+          values:
+          - 1
+          objectValues: null
+        valid: true
+    - name: body
+      in: body
+      weight: null
+      generators:
+      - type: BodyGenerator
+        genParameters: []
+        valid: true
+    expectedResponse: 200
+  - testPath: "/users/v1/{username}/password"
+    operationId: api_views.users.update_password
+    method: put
+    testParameters:
+    - name: username
+      in: path
+      weight: null
+      generators:
+      - type: RandomEnglishWord
+        genParameters:
+        - name: maxWords
+          values:
+          - 1
+          objectValues: null
+        valid: true
+    - name: body
+      in: body
+      weight: null
+      generators:
+      - type: BodyGenerator
+        genParameters: []
+        valid: true
+    expectedResponse: 200
+  - testPath: /books/v1
+    operationId: api_views.books.get_all_books
+    method: get
+    testParameters: null
+    expectedResponse: 200
+  - testPath: /books/v1
+    operationId: api_views.books.add_new_book
+    method: post
+    testParameters:
+    - name: body
+      in: body
+      weight: null
+      generators:
+      - type: BodyGenerator
+        genParameters: []
+        valid: true
+    expectedResponse: 200
+  - testPath: "/books/v1/{book_title}"
+    operationId: api_views.books.get_by_title
+    method: get
+    testParameters:
+    - name: book_title
+      in: path
+      weight: null
+      generators:
+      - type: RandomEnglishWord
+        genParameters:
+        - name: maxWords
+          values:
+          - 1
+          objectValues: null
+        valid: true
+    expectedResponse: 200

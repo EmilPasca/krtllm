@@ -1,0 +1,2167 @@
+{
+  "409a6bdaeccb02106663745cc771b695" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "5600a8191189985e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008993338,
+        "stop" : 1706008993768,
+        "duration" : 430
+      }
+    }, {
+      "uid" : "486207eb111cf4f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008993338,
+        "stop" : 1706008993768,
+        "duration" : 430
+      }
+    } ]
+  },
+  "c4e551bdb92a571b7ab518456202c366" : {
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "a000d975abc1e094",
+      "status" : "failed",
+      "statusDetails" : "This test case's input was (possibly) correct, but received a 400 (Bad Request) status code.",
+      "time" : {
+        "start" : 1706008994050,
+        "stop" : 1706008994218,
+        "duration" : 168
+      }
+    }, {
+      "uid" : "bd67458ae70a6046",
+      "status" : "failed",
+      "statusDetails" : "This test case's input was (possibly) correct, but received a 400 (Bad Request) status code.",
+      "time" : {
+        "start" : 1706008994050,
+        "stop" : 1706008994218,
+        "duration" : 168
+      }
+    } ]
+  },
+  "4eb7357186fc3f3a869fa15247dc0f0f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "3ca9527dd27a146a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008994666,
+        "stop" : 1706008994797,
+        "duration" : 131
+      }
+    }, {
+      "uid" : "ff15df1da0382d0b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008994666,
+        "stop" : 1706008994797,
+        "duration" : 131
+      }
+    } ]
+  },
+  "1fe9c2fcd670bc9f423dc49f34c473d9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "59f7702ec28d89fb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706009011545,
+        "stop" : 1706009011594,
+        "duration" : 49
+      }
+    } ]
+  },
+  "65265746dbf829a94040555c0620c969" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "15e040fde1feb7d6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008975422,
+        "stop" : 1706008975574,
+        "duration" : 152
+      }
+    }, {
+      "uid" : "590a00841bc935b1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008975422,
+        "stop" : 1706008975574,
+        "duration" : 152
+      }
+    }, {
+      "uid" : "118de905175ffd1b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008975422,
+        "stop" : 1706008975574,
+        "duration" : 152
+      }
+    } ]
+  },
+  "9d058d5b91abe0de5424a11ba79592e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6961a8c3b4a8e18",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706009011597,
+        "stop" : 1706009011673,
+        "duration" : 76
+      }
+    } ]
+  },
+  "42c6204a79e6aeaae4533cce16624f4c" : {
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "d1f69f7574796e5",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706008992755,
+        "stop" : 1706008992852,
+        "duration" : 97
+      }
+    }, {
+      "uid" : "46746a04cf5a6955",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706008992755,
+        "stop" : 1706008992852,
+        "duration" : 97
+      }
+    } ]
+  },
+  "fd0cc782bff3094672798002631e71fd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "b735b2c9d31af001",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008992856,
+        "stop" : 1706008992963,
+        "duration" : 107
+      }
+    }, {
+      "uid" : "eae3e1aa7ada4e88",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008992856,
+        "stop" : 1706008992963,
+        "duration" : 107
+      }
+    } ]
+  },
+  "85c4624e95deb49b37f8513e615ae294" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "d2c1bf6981407c51",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008972733,
+        "stop" : 1706008972966,
+        "duration" : 233
+      }
+    }, {
+      "uid" : "36fb8d64c0df91bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008972733,
+        "stop" : 1706008972966,
+        "duration" : 233
+      }
+    }, {
+      "uid" : "a9c8e983cc31eb10",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008972733,
+        "stop" : 1706008972966,
+        "duration" : 233
+      }
+    } ]
+  },
+  "45103e177e5e7dd7443bb5741a53b6b" : {
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "deacbd4b4c8eb10",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706008974147,
+        "stop" : 1706008974229,
+        "duration" : 82
+      }
+    }, {
+      "uid" : "705470ce67bc62d2",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706008974147,
+        "stop" : 1706008974229,
+        "duration" : 82
+      }
+    }, {
+      "uid" : "8013f2ec7adffa94",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706008974147,
+        "stop" : 1706008974229,
+        "duration" : 82
+      }
+    } ]
+  },
+  "f456378ecd2af4b5b8242a92a5accdc2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "862af06c7e4d77e3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008972970,
+        "stop" : 1706008973147,
+        "duration" : 177
+      }
+    }, {
+      "uid" : "cfb8206b7bd361ac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008972970,
+        "stop" : 1706008973147,
+        "duration" : 177
+      }
+    }, {
+      "uid" : "8e22a58026a29208",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008972970,
+        "stop" : 1706008973147,
+        "duration" : 177
+      }
+    } ]
+  },
+  "7ee2b3725dd602d00cb32e64439253e6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "71916b64cee8f20a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008976093,
+        "stop" : 1706008976201,
+        "duration" : 108
+      }
+    }, {
+      "uid" : "d8720e5e4976e7f9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008976093,
+        "stop" : 1706008976201,
+        "duration" : 108
+      }
+    }, {
+      "uid" : "eff9dd1ef8fb7f59",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008976093,
+        "stop" : 1706008976201,
+        "duration" : 108
+      }
+    } ]
+  },
+  "f6908e2740fcc4149b26ae58423e5224" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "5f8f9f0bbbb0795a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008973484,
+        "stop" : 1706008973727,
+        "duration" : 243
+      }
+    }, {
+      "uid" : "9daefbe107a8dfe8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008973484,
+        "stop" : 1706008973727,
+        "duration" : 243
+      }
+    }, {
+      "uid" : "7fa64eccfdd3ac2c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008973484,
+        "stop" : 1706008973727,
+        "duration" : 243
+      }
+    } ]
+  },
+  "e05e7841e4faf1501170e7ce01cc537d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "714533abb10aa426",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706009011044,
+        "stop" : 1706009011137,
+        "duration" : 93
+      }
+    } ]
+  },
+  "4cb4e4bd7ade2ba81b2e1443fb5932bf" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "176613cac1e6fbf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008973731,
+        "stop" : 1706008973827,
+        "duration" : 96
+      }
+    }, {
+      "uid" : "fb7e32bf31b3b480",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008973731,
+        "stop" : 1706008973827,
+        "duration" : 96
+      }
+    }, {
+      "uid" : "ff4fb93b3a48830f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008973731,
+        "stop" : 1706008973827,
+        "duration" : 96
+      }
+    } ]
+  },
+  "b6712922e7d69a4784dfd4d222b5d339" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "b0ce07994691ce",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008994384,
+        "stop" : 1706008994596,
+        "duration" : 212
+      }
+    }, {
+      "uid" : "f65b100eb29010d9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008994384,
+        "stop" : 1706008994596,
+        "duration" : 212
+      }
+    } ]
+  },
+  "7d8951be31ae933dc4932d204a2e1103" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "de27671292331a4d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008976338,
+        "stop" : 1706008976549,
+        "duration" : 211
+      }
+    }, {
+      "uid" : "335ca608132770bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008976338,
+        "stop" : 1706008976549,
+        "duration" : 211
+      }
+    }, {
+      "uid" : "4daad186ad616c54",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008976338,
+        "stop" : 1706008976549,
+        "duration" : 211
+      }
+    } ]
+  },
+  "c4d2b0e926867387bec3c5680a690c6f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3130c74691e0750a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706009011879,
+        "stop" : 1706009011962,
+        "duration" : 83
+      }
+    } ]
+  },
+  "e581ba237a3ed288cbbdf47b6d8727fe" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "804e8b74622c8b96",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706009011356,
+        "stop" : 1706009011425,
+        "duration" : 69
+      }
+    } ]
+  },
+  "2c849bf64e95e176265843a38cb76cb4" : {
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "2014a17c11b4da1b",
+      "status" : "failed",
+      "statusDetails" : "This test case's input was (possibly) correct, but received a 400 (Bad Request) status code.",
+      "time" : {
+        "start" : 1706008975805,
+        "stop" : 1706008975976,
+        "duration" : 171
+      }
+    }, {
+      "uid" : "dfd50688ade8f049",
+      "status" : "failed",
+      "statusDetails" : "This test case's input was (possibly) correct, but received a 400 (Bad Request) status code.",
+      "time" : {
+        "start" : 1706008975805,
+        "stop" : 1706008975976,
+        "duration" : 171
+      }
+    }, {
+      "uid" : "1a3794c50d4e6d74",
+      "status" : "failed",
+      "statusDetails" : "This test case's input was (possibly) correct, but received a 400 (Bad Request) status code.",
+      "time" : {
+        "start" : 1706008975805,
+        "stop" : 1706008975976,
+        "duration" : 171
+      }
+    } ]
+  },
+  "8a3eb4ff3c1814452049aaa828bda514" : {
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "3f746d1ff456adfc",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706008995234,
+        "stop" : 1706008995397,
+        "duration" : 163
+      }
+    }, {
+      "uid" : "b4abc830865b5385",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706008995234,
+        "stop" : 1706008995397,
+        "duration" : 163
+      }
+    } ]
+  },
+  "8b782cfd7747aa701f779d9c3a49e6a7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "dfba6b1c6b0c6607",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008975579,
+        "stop" : 1706008975801,
+        "duration" : 222
+      }
+    }, {
+      "uid" : "62601f92d9612904",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008975579,
+        "stop" : 1706008975801,
+        "duration" : 222
+      }
+    }, {
+      "uid" : "4944568c02e13fc4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008975579,
+        "stop" : 1706008975801,
+        "duration" : 222
+      }
+    } ]
+  },
+  "66537dce3d37ec430770a9b2db4f5d3a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "266d2bf27c1c739d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706009010829,
+        "stop" : 1706009010881,
+        "duration" : 52
+      }
+    } ]
+  },
+  "a7fb587997fca09955d7d384199227" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "59af03715a16824f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008994800,
+        "stop" : 1706008994937,
+        "duration" : 137
+      }
+    }, {
+      "uid" : "a49bb524b2de7fba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008994800,
+        "stop" : 1706008994937,
+        "duration" : 137
+      }
+    } ]
+  },
+  "7a22c56e6ff6a5dfe159a9b06d139a1f" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e20cb7eec7ef3b6e",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706009012595,
+        "stop" : 1706009012683,
+        "duration" : 88
+      }
+    } ]
+  },
+  "c2594d5e339dc3f3746a0abdfa5ea76e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "90877f414e5780b1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706009010978,
+        "stop" : 1706009011040,
+        "duration" : 62
+      }
+    } ]
+  },
+  "3ecbff49ae8c5de5f6135f14c429a007" : {
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "426e7f0f0bc2a373",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706008972495,
+        "stop" : 1706008972727,
+        "duration" : 232
+      }
+    }, {
+      "uid" : "76c79ae87226ec61",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706008972495,
+        "stop" : 1706008972727,
+        "duration" : 232
+      }
+    }, {
+      "uid" : "9718d50306defec",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706008972495,
+        "stop" : 1706008972727,
+        "duration" : 232
+      }
+    } ]
+  },
+  "c8b1872b7b14d73293bb8c3b69370804" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "14b2fc825f7de781",
+      "status" : "failed",
+      "statusDetails" : "This test case's input was (possibly) correct, but received a 400 (Bad Request) status code.",
+      "time" : {
+        "start" : 1706009012274,
+        "stop" : 1706009012356,
+        "duration" : 82
+      }
+    } ]
+  },
+  "24b42dbbf633ae81700ab44e2f2a805d" : {
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "fdb0013428ca9dce",
+      "status" : "failed",
+      "statusDetails" : "This test case's input was (possibly) correct, but received a 400 (Bad Request) status code.",
+      "time" : {
+        "start" : 1706008994940,
+        "stop" : 1706008995231,
+        "duration" : 291
+      }
+    }, {
+      "uid" : "e3012df0c59119c7",
+      "status" : "failed",
+      "statusDetails" : "This test case's input was (possibly) correct, but received a 400 (Bad Request) status code.",
+      "time" : {
+        "start" : 1706008994940,
+        "stop" : 1706008995231,
+        "duration" : 291
+      }
+    } ]
+  },
+  "bb82e1cd645775654366f780a8462890" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "f7cf4d3d712d2911",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008993083,
+        "stop" : 1706008993320,
+        "duration" : 237
+      }
+    }, {
+      "uid" : "63be67c85135fa2f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008993083,
+        "stop" : 1706008993320,
+        "duration" : 237
+      }
+    } ]
+  },
+  "2ca77ef4efb003f6b5fd64e59203a576" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "4dced3be9470473d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008992671,
+        "stop" : 1706008992752,
+        "duration" : 81
+      }
+    }, {
+      "uid" : "d06349095bf082f6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008992671,
+        "stop" : 1706008992752,
+        "duration" : 81
+      }
+    } ]
+  },
+  "9360db42981866025b053185c9ac7c0c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "39846f0614f658d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008994228,
+        "stop" : 1706008994380,
+        "duration" : 152
+      }
+    }, {
+      "uid" : "1e1831c3e7059d39",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008994228,
+        "stop" : 1706008994380,
+        "duration" : 152
+      }
+    } ]
+  },
+  "1347e29e01cccd0580b48f7344daa658" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "ce49eb1357814eab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008973196,
+        "stop" : 1706008973345,
+        "duration" : 149
+      }
+    }, {
+      "uid" : "126930a0ccc52956",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008973196,
+        "stop" : 1706008973345,
+        "duration" : 149
+      }
+    }, {
+      "uid" : "589bbdcc31bcb888",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008973196,
+        "stop" : 1706008973345,
+        "duration" : 149
+      }
+    } ]
+  },
+  "6a4caa1c5feb82991761ad21ffa0a800" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "ae7d48dc419bf419",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008974236,
+        "stop" : 1706008974458,
+        "duration" : 222
+      }
+    }, {
+      "uid" : "66dbf198d008507f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008974236,
+        "stop" : 1706008974458,
+        "duration" : 222
+      }
+    }, {
+      "uid" : "81ed18ac3210a2ef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008974236,
+        "stop" : 1706008974458,
+        "duration" : 222
+      }
+    } ]
+  },
+  "5a80c28b4301f575d82655e87ea101dc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "ecfbcb08a2ff9b26",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008992506,
+        "stop" : 1706008992601,
+        "duration" : 95
+      }
+    }, {
+      "uid" : "b273d847e1ff799d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008992506,
+        "stop" : 1706008992601,
+        "duration" : 95
+      }
+    } ]
+  },
+  "72bc98ce5a6807ff7c571b3e6db42543" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b84da2320d653c08",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Object instance has properties which are not allowed by the schema: [\"help\";\"vulnerable\"]",
+      "time" : {
+        "start" : 1706009010523,
+        "stop" : 1706009010608,
+        "duration" : 85
+      }
+    } ]
+  },
+  "e3df102cb6383e20f3219209087aa6e3" : {
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "3a737946196215b5",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Response Content-Type header 'application/problem+json' does not match any allowed types. Must be one of: [application/json].",
+      "time" : {
+        "start" : 1706008992220,
+        "stop" : 1706008992320,
+        "duration" : 100
+      }
+    }, {
+      "uid" : "b9e600f8f2b5feea",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Response Content-Type header 'application/problem+json' does not match any allowed types. Must be one of: [application/json].",
+      "time" : {
+        "start" : 1706008992220,
+        "stop" : 1706008992320,
+        "duration" : 100
+      }
+    } ]
+  },
+  "a5a49d816ef287d252afa2b5f0364667" : {
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "39341eabf8f481bb",
+      "status" : "failed",
+      "statusDetails" : "This test case's input was (possibly) correct, but received a 400 (Bad Request) status code.",
+      "time" : {
+        "start" : 1706008996041,
+        "stop" : 1706008996153,
+        "duration" : 112
+      }
+    }, {
+      "uid" : "e4aaa4fa3fa0e8a4",
+      "status" : "failed",
+      "statusDetails" : "This test case's input was (possibly) correct, but received a 400 (Bad Request) status code.",
+      "time" : {
+        "start" : 1706008996041,
+        "stop" : 1706008996153,
+        "duration" : 112
+      }
+    } ]
+  },
+  "b71d6297555e6b37dbfd221e854216a5" : {
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "4a7b58fa0af77cf5",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706008969223,
+        "stop" : 1706008972393,
+        "duration" : 3170
+      }
+    }, {
+      "uid" : "bb68f0db75d2563c",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706008969223,
+        "stop" : 1706008972393,
+        "duration" : 3170
+      }
+    }, {
+      "uid" : "39a5b8a9a4b3fe03",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706008969223,
+        "stop" : 1706008972393,
+        "duration" : 3170
+      }
+    } ]
+  },
+  "86656358240f21720e3cd047e26a8d08" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "456a068ec13f8d84",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008976975,
+        "stop" : 1706008977088,
+        "duration" : 113
+      }
+    }, {
+      "uid" : "13b47ef4ebd21fd4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008976975,
+        "stop" : 1706008977088,
+        "duration" : 113
+      }
+    }, {
+      "uid" : "7a1e4163045df372",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008976975,
+        "stop" : 1706008977088,
+        "duration" : 113
+      }
+    } ]
+  },
+  "8ea5ea7266b3d8a2ed56bfca4231b736" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "690b36a956873f18",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706009012485,
+        "stop" : 1706009012590,
+        "duration" : 105
+      }
+    } ]
+  },
+  "8bde5d4cf0e220a40ff641af29a64b18" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "3c2dca2769b6f8f4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008992019,
+        "stop" : 1706008992098,
+        "duration" : 79
+      }
+    }, {
+      "uid" : "8109892256125e04",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008992019,
+        "stop" : 1706008992098,
+        "duration" : 79
+      }
+    } ]
+  },
+  "3f8a999f4e1624d2b14b2adee1b129d9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fa3fc3028ab01921",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706009012688,
+        "stop" : 1706009012795,
+        "duration" : 107
+      }
+    } ]
+  },
+  "7d5870ce36a62126155eef9ca09c6a09" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "f2bc1d80bc5ef51",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008995504,
+        "stop" : 1706008995664,
+        "duration" : 160
+      }
+    }, {
+      "uid" : "eb908b639a8168c1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008995504,
+        "stop" : 1706008995664,
+        "duration" : 160
+      }
+    } ]
+  },
+  "f30b0c016db20343672e874d744ec789" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "648f653bb603a4e2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008976824,
+        "stop" : 1706008976967,
+        "duration" : 143
+      }
+    }, {
+      "uid" : "1013b6f84686e3d7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008976824,
+        "stop" : 1706008976967,
+        "duration" : 143
+      }
+    }, {
+      "uid" : "facf270b4237b21e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008976824,
+        "stop" : 1706008976967,
+        "duration" : 143
+      }
+    } ]
+  },
+  "85295f40b2465cb9b2ad7673cd40fd0e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "afea781a18f48036",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706009011429,
+        "stop" : 1706009011487,
+        "duration" : 58
+      }
+    } ]
+  },
+  "c67da66bfd16983796a8623511b5002f" : {
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "e6ad0cef8a7e35f6",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706008993771,
+        "stop" : 1706008994038,
+        "duration" : 267
+      }
+    }, {
+      "uid" : "b45d6895ace9d1ee",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706008993771,
+        "stop" : 1706008994038,
+        "duration" : 267
+      }
+    } ]
+  },
+  "2f0fc009c29341d42fd0585b993aaea3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "1701afc642daa8a4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008992603,
+        "stop" : 1706008992668,
+        "duration" : 65
+      }
+    }, {
+      "uid" : "20a8a583e0c66702",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008992603,
+        "stop" : 1706008992668,
+        "duration" : 65
+      }
+    } ]
+  },
+  "e68e5c99b980609e053d2b9cba4d2b63" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "d2563a298781d39e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008974619,
+        "stop" : 1706008974758,
+        "duration" : 139
+      }
+    }, {
+      "uid" : "f839086b2531c60e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008974619,
+        "stop" : 1706008974758,
+        "duration" : 139
+      }
+    }, {
+      "uid" : "8d2bc33e14098de4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008974619,
+        "stop" : 1706008974758,
+        "duration" : 139
+      }
+    } ]
+  },
+  "7b1e51c18cec37988be644b2560a409d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a454543dff842cc9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706009011677,
+        "stop" : 1706009011742,
+        "duration" : 65
+      }
+    } ]
+  },
+  "25343215f1494bfed385b7ab3e9156f4" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b96355949de2d166",
+      "status" : "failed",
+      "statusDetails" : "This test case's input was (possibly) correct, but received a 400 (Bad Request) status code.",
+      "time" : {
+        "start" : 1706009012798,
+        "stop" : 1706009013000,
+        "duration" : 202
+      }
+    } ]
+  },
+  "baea3998e774c080552b7305859c4403" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "c42e4cd50f1a59c2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008991679,
+        "stop" : 1706008992016,
+        "duration" : 337
+      }
+    }, {
+      "uid" : "1fb0f55a4239746c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008991679,
+        "stop" : 1706008992016,
+        "duration" : 337
+      }
+    } ]
+  },
+  "86944017c535b7bd0cf516701a69ef43" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "bef3c173e06303a6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008992101,
+        "stop" : 1706008992217,
+        "duration" : 116
+      }
+    }, {
+      "uid" : "c19e8004245d5cdc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008992101,
+        "stop" : 1706008992217,
+        "duration" : 116
+      }
+    } ]
+  },
+  "b36a2b0d5b9e0c86e21289c6f1c5e682" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "7993d23fefaface1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008995667,
+        "stop" : 1706008996038,
+        "duration" : 371
+      }
+    }, {
+      "uid" : "52772227e9242e7f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008995667,
+        "stop" : 1706008996038,
+        "duration" : 371
+      }
+    } ]
+  },
+  "ef7a8a8d30c49765f7035705d6e84b2a" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8e76c3b09aab090",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706009011812,
+        "stop" : 1706009011875,
+        "duration" : 63
+      }
+    } ]
+  },
+  "83cae06beb9c85e3d97151d2798a9089" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fcaadf43e298ba65",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706009010884,
+        "stop" : 1706009010975,
+        "duration" : 91
+      }
+    } ]
+  },
+  "b98d450d27c3f6470e873a0fd111b8ec" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "6a499f437a9bc87e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008992968,
+        "stop" : 1706008993079,
+        "duration" : 111
+      }
+    }, {
+      "uid" : "555de28f20354e42",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008992968,
+        "stop" : 1706008993079,
+        "duration" : 111
+      }
+    } ]
+  },
+  "51031a9974f52a443a0e8d43dbba66c2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "ef56035ce2741c24",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008976205,
+        "stop" : 1706008976331,
+        "duration" : 126
+      }
+    }, {
+      "uid" : "a252e826e50b5412",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008976205,
+        "stop" : 1706008976331,
+        "duration" : 126
+      }
+    }, {
+      "uid" : "1c65d6431658c60c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008976205,
+        "stop" : 1706008976331,
+        "duration" : 126
+      }
+    } ]
+  },
+  "b2a066e8014b5a25c3b8473cd621583f" : {
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "cc6cfd00ad99a35f",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Object instance has properties which are not allowed by the schema: [\"help\";\"vulnerable\"]",
+      "time" : {
+        "start" : 1706008992420,
+        "stop" : 1706008992502,
+        "duration" : 82
+      }
+    }, {
+      "uid" : "a1e0636cbe15b5e6",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Object instance has properties which are not allowed by the schema: [\"help\";\"vulnerable\"]",
+      "time" : {
+        "start" : 1706008992420,
+        "stop" : 1706008992502,
+        "duration" : 82
+      }
+    } ]
+  },
+  "5d4028a39be37615d77839c1d0e298e" : {
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "6c8ee81bea8cf15b",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Object instance has properties which are not allowed by the schema: [\"help\";\"vulnerable\"]",
+      "time" : {
+        "start" : 1706008974762,
+        "stop" : 1706008974896,
+        "duration" : 134
+      }
+    }, {
+      "uid" : "71b1f82fd66e0007",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Object instance has properties which are not allowed by the schema: [\"help\";\"vulnerable\"]",
+      "time" : {
+        "start" : 1706008974762,
+        "stop" : 1706008974896,
+        "duration" : 134
+      }
+    }, {
+      "uid" : "b05b59d242259cda",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Object instance has properties which are not allowed by the schema: [\"help\";\"vulnerable\"]",
+      "time" : {
+        "start" : 1706008974762,
+        "stop" : 1706008974896,
+        "duration" : 134
+      }
+    } ]
+  },
+  "6b56f949d629ed73126f7e79e4305567" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c76c9257ba8f9963",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706009012156,
+        "stop" : 1706009012271,
+        "duration" : 115
+      }
+    } ]
+  },
+  "bf04984619721f46178866aed46ed36" : {
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "ba1c9ef92c092dcd",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706008975094,
+        "stop" : 1706008975338,
+        "duration" : 244
+      }
+    }, {
+      "uid" : "e543e44bddabe41c",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706008975094,
+        "stop" : 1706008975338,
+        "duration" : 244
+      }
+    }, {
+      "uid" : "3c61d2398bc228dd",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706008975094,
+        "stop" : 1706008975338,
+        "duration" : 244
+      }
+    } ]
+  },
+  "1a047f668f30d554587a22238df35dfa" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "887d6f6b227a1165",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008974902,
+        "stop" : 1706008975090,
+        "duration" : 188
+      }
+    }, {
+      "uid" : "562bc23aaebd35ac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008974902,
+        "stop" : 1706008975090,
+        "duration" : 188
+      }
+    }, {
+      "uid" : "c58874c28220a579",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008974902,
+        "stop" : 1706008975090,
+        "duration" : 188
+      }
+    } ]
+  },
+  "7825614017ee978da8278b7b3fec730e" : {
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "313d27b0b4061b34",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Response Content-Type header 'application/problem+json' does not match any allowed types. Must be one of: [application/json].",
+      "time" : {
+        "start" : 1706008974462,
+        "stop" : 1706008974615,
+        "duration" : 153
+      }
+    }, {
+      "uid" : "4d8fda1d40263372",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Response Content-Type header 'application/problem+json' does not match any allowed types. Must be one of: [application/json].",
+      "time" : {
+        "start" : 1706008974462,
+        "stop" : 1706008974615,
+        "duration" : 153
+      }
+    }, {
+      "uid" : "df3ba8fdb1030c7d",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Response Content-Type header 'application/problem+json' does not match any allowed types. Must be one of: [application/json].",
+      "time" : {
+        "start" : 1706008974462,
+        "stop" : 1706008974615,
+        "duration" : 153
+      }
+    } ]
+  },
+  "c4735f34d31616bc1933a44d3f03e7d2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "aa9682d85dd63ca4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008975981,
+        "stop" : 1706008976088,
+        "duration" : 107
+      }
+    }, {
+      "uid" : "fa36b233a491d6ba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008975981,
+        "stop" : 1706008976088,
+        "duration" : 107
+      }
+    }, {
+      "uid" : "14f437fadf0b8b91",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706008975981,
+        "stop" : 1706008976088,
+        "duration" : 107
+      }
+    } ]
+  },
+  "e3acd66f5344fafb751c42bf1b3af28f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "23b3e02da7e78675",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706009011140,
+        "stop" : 1706009011353,
+        "duration" : 213
+      }
+    } ]
+  },
+  "753717b82464b779d822e7c20925b441" : {
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "a0369e90c204128d",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Object instance has properties which are not allowed by the schema: [\"help\";\"vulnerable\"]",
+      "time" : {
+        "start" : 1706008973348,
+        "stop" : 1706008973480,
+        "duration" : 132
+      }
+    }, {
+      "uid" : "e01dfa4f9ef5efa",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Object instance has properties which are not allowed by the schema: [\"help\";\"vulnerable\"]",
+      "time" : {
+        "start" : 1706008973348,
+        "stop" : 1706008973480,
+        "duration" : 132
+      }
+    }, {
+      "uid" : "1284090f5480ee3e",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Object instance has properties which are not allowed by the schema: [\"help\";\"vulnerable\"]",
+      "time" : {
+        "start" : 1706008973348,
+        "stop" : 1706008973480,
+        "duration" : 132
+      }
+    } ]
+  },
+  "7a8050e57431c93ab13bfe7f36ea64fe" : {
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "9b74e0dca8a96bcb",
+      "status" : "failed",
+      "statusDetails" : "This test case's input was (possibly) correct, but received a 400 (Bad Request) status code.",
+      "time" : {
+        "start" : 1706008973832,
+        "stop" : 1706008974141,
+        "duration" : 309
+      }
+    }, {
+      "uid" : "9f23542221b7f5b4",
+      "status" : "failed",
+      "statusDetails" : "This test case's input was (possibly) correct, but received a 400 (Bad Request) status code.",
+      "time" : {
+        "start" : 1706008973832,
+        "stop" : 1706008974141,
+        "duration" : 309
+      }
+    }, {
+      "uid" : "370ab5d9321d9938",
+      "status" : "failed",
+      "statusDetails" : "This test case's input was (possibly) correct, but received a 400 (Bad Request) status code.",
+      "time" : {
+        "start" : 1706008973832,
+        "stop" : 1706008974141,
+        "duration" : 309
+      }
+    } ]
+  },
+  "f85b336f2bd21271e1888744ff00f13d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c56f71a7b4ebcf07",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706009012360,
+        "stop" : 1706009012482,
+        "duration" : 122
+      }
+    } ]
+  },
+  "e0ec8bc4208cb6230d3f2b869861fbd5" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a5e3dfc5d8dbccf6",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Object instance has properties which are not allowed by the schema: [\"help\";\"vulnerable\"]",
+      "time" : {
+        "start" : 1706009011491,
+        "stop" : 1706009011542,
+        "duration" : 51
+      }
+    } ]
+  },
+  "c8e67a04962c1e9e6c0f7f7344a55e55" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ac0e6a077e5f5f5b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706009011746,
+        "stop" : 1706009011809,
+        "duration" : 63
+      }
+    } ]
+  },
+  "f7afde6f4a396cd08bfff8f82a9cdf00" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "751b744a1230ddee",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Response Content-Type header 'application/problem+json' does not match any allowed types. Must be one of: [application/json].",
+      "time" : {
+        "start" : 1706009012074,
+        "stop" : 1706009012151,
+        "duration" : 77
+      }
+    } ]
+  },
+  "ef041c5ab2b0b679a6483b2827cbb9af" : {
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "cc7b4a03ac089b5f",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Object instance has properties which are not allowed by the schema: [\"help\";\"vulnerable\"]",
+      "time" : {
+        "start" : 1706008995401,
+        "stop" : 1706008995501,
+        "duration" : 100
+      }
+    }, {
+      "uid" : "7f68f2dcc57e36f4",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Object instance has properties which are not allowed by the schema: [\"help\";\"vulnerable\"]",
+      "time" : {
+        "start" : 1706008995401,
+        "stop" : 1706008995501,
+        "duration" : 100
+      }
+    } ]
+  },
+  "cc5970f55ba497545b30d0f2273dc9c9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f891376ad6c4d634",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706009010612,
+        "stop" : 1706009010826,
+        "duration" : 214
+      }
+    } ]
+  },
+  "9343e7f48be9eae872abb574be168595" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e43107883163a727",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706009013017,
+        "stop" : 1706009013253,
+        "duration" : 236
+      }
+    } ]
+  },
+  "a1201e8987df2104248939c581ebf525" : {
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "24574acb66b18945",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706008992324,
+        "stop" : 1706008992414,
+        "duration" : 90
+      }
+    }, {
+      "uid" : "72744c8bd719a89c",
+      "status" : "failed",
+      "statusDetails" : "OAS disconformity: Instance type (object) does not match any allowed primitive type (allowed: [\"array\"]) --- Object instance has properties which are not allowed by the schema: [\"users\"]",
+      "time" : {
+        "start" : 1706008992324,
+        "stop" : 1706008992414,
+        "duration" : 90
+      }
+    } ]
+  },
+  "b501cea1bef24c2b7dfa2f74c58967e3" : {
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "f28cf29ce188b2a2",
+      "status" : "failed",
+      "statusDetails" : "This test case's input was (possibly) correct, but received a 400 (Bad Request) status code.",
+      "time" : {
+        "start" : 1706008976553,
+        "stop" : 1706008976819,
+        "duration" : 266
+      }
+    }, {
+      "uid" : "5d0ac7c455583de4",
+      "status" : "failed",
+      "statusDetails" : "This test case's input was (possibly) correct, but received a 400 (Bad Request) status code.",
+      "time" : {
+        "start" : 1706008976553,
+        "stop" : 1706008976819,
+        "duration" : 266
+      }
+    }, {
+      "uid" : "adb21edaf2288a14",
+      "status" : "failed",
+      "statusDetails" : "This test case's input was (possibly) correct, but received a 400 (Bad Request) status code.",
+      "time" : {
+        "start" : 1706008976553,
+        "stop" : 1706008976819,
+        "duration" : 266
+      }
+    } ]
+  },
+  "d6a492d983fef68d959b139a46aeb37c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1db048c3a947b66",
+      "status" : "passed",
+      "time" : {
+        "start" : 1706009011966,
+        "stop" : 1706009012071,
+        "duration" : 105
+      }
+    } ]
+  }
+}

@@ -1,5 +1,15 @@
 # Karate DSL LLM Assisted Test Case Generator 
 
+
+## Repository Structure
+- Results folder contains specific test cases, results and aditional files for the respective API. 
+
+## How to Use
+
+
+## Additional Resources
+- For more detailed information, refer to the AdditionalResources/ folder.
+
 ## Karate Project Builder
 The main fields you need to modify are:
 `api_name = "Swagger_Petstore_Lite"` 
@@ -35,3 +45,12 @@ This script will:
 Requirements:
 - Java 17+
 - Maven 3.6+
+
+## Results 
+We've documented our framework performance in terms of test generated, test results, and other findings in our `results` folder. 
+
+- Navigate to the version folder corresponding to the framework version.
+- Inside each version folder, find folders for each API tested.
+- Explore `{ApiName}/KRTLLM/TestCases/` for the test scripts and `{ApiName}/KRTLLM/TestResults/` for the outcome of these tests.
+-  `GeneratedFramework` for the test scripts and `KRTLLM/TestResults/` for the outcome of these tests.
+- We've included test cases and test results from other frameworks like `RESTest` for comparison.

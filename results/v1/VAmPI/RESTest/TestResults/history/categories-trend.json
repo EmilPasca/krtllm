@@ -1,0 +1,16 @@
+[ {
+  "data" : {
+    "SEVERITY 1: Disconformity with OAS" : 21,
+    "WARNING: Status 400 with (possibly) valid request" : 8
+  }
+}, {
+  "data" : {
+    "SEVERITY 1: Disconformity with OAS" : 14,
+    "WARNING: Status 400 with (possibly) valid request" : 6
+  }
+}, {
+  "data" : {
+    "SEVERITY 1: Disconformity with OAS" : 7,
+    "WARNING: Status 400 with (possibly) valid request" : 3
+  }
+} ]

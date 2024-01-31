@@ -1,0 +1,1 @@
+For the visualization of test outcomes within a web browser, it is required to have Allure software installed on the local system. Moreover, the test results are also encapsulated in distinct JSON files, facilitating their compatibility and utilization with a diverse array of test reporting tools beyond Allure for comprehensive analysis and display.
