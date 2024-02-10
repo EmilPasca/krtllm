@@ -1,0 +1,21 @@
+<testsuite failures="1" name="0004_users_v1__debug_get_200_karate_dsl.feature" skipped="0" tests="1" time="0.015295"><testcase classname="0004_users_v1__debug_get_200_karate_dsl" name="_debug Endpoint check" time="0.015295"><failure message="match failed: CONTAINS&#10;  $ | actual does not contain expected | all key-values did not match, expected has un-matched keys - [users] (MAP:MAP)&#10;  {&quot;users&quot;:[{&quot;admin&quot;:false,&quot;email&quot;:&quot;mail1@mail.com&quot;,&quot;password&quot;:&quot;pass1&quot;,&quot;username&quot;:&quot;name1&quot;},{&quot;admin&quot;:false,&quot;email&quot;:&quot;mail2@mail.com&quot;,&quot;password&quot;:&quot;pass2&quot;,&quot;username&quot;:&quot;name2&quot;},{&quot;admin&quot;:true,&quot;email&quot;:&quot;admin@mail.com&quot;,&quot;password&quot;:&quot;pass1&quot;,&quot;username&quot;:&quot;admin&quot;}]}&#10;  {&quot;users&quot;:[]}&#10;&#10;    $.users | not equal | actual array length is not equal to expected - 3:0 (LIST:LIST)&#10;    [{&quot;admin&quot;:false,&quot;email&quot;:&quot;mail1@mail.com&quot;,&quot;password&quot;:&quot;pass1&quot;,&quot;username&quot;:&quot;name1&quot;},{&quot;admin&quot;:false,&quot;email&quot;:&quot;mail2@mail.com&quot;,&quot;password&quot;:&quot;pass2&quot;,&quot;username&quot;:&quot;name2&quot;},{&quot;admin&quot;:true,&quot;email&quot;:&quot;admin@mail.com&quot;,&quot;password&quot;:&quot;pass1&quot;,&quot;username&quot;:&quot;admin&quot;}]&#10;    []&#10;&#10;&#10;classpath:0004_users_v1__debug_get_200_karate_dsl.feature:7">Given url 'http://localhost:5000/users/v1/_debug' ......................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response contains { "users": [] } ............................... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: match failed: CONTAINS
+  $ | actual does not contain expected | all key-values did not match, expected has un-matched keys - [users] (MAP:MAP)
+  {"users":[{"admin":false,"email":"mail1@mail.com","password":"pass1","username":"name1"},{"admin":false,"email":"mail2@mail.com","password":"pass2","username":"name2"},{"admin":true,"email":"admin@mail.com","password":"pass1","username":"admin"}]}
+  {"users":[]}
+
+    $.users | not equal | actual array length is not equal to expected - 3:0 (LIST:LIST)
+    [{"admin":false,"email":"mail1@mail.com","password":"pass1","username":"name1"},{"admin":false,"email":"mail2@mail.com","password":"pass2","username":"name2"},{"admin":true,"email":"admin@mail.com","password":"pass1","username":"admin"}]
+    []
+
+
+classpath:0004_users_v1__debug_get_200_karate_dsl.feature:7&#13;
+	at &lt;feature&gt;.: And match response contains { "users": [] } (classpath:0004_users_v1__debug_get_200_karate_dsl.feature:7:7)&#13;
+
+</failure></testcase>
+</testsuite>

@@ -1,0 +1,31 @@
+{
+  "path": "/pet/findByStatus",
+  "method": "GET",
+  "responses": {
+    "400": {
+      "description": "Invalid status value"
+    }
+  },
+  "requestBody": {},
+  "parameters": [
+    {
+      "name": "status",
+      "in": "query",
+      "description": "Status values that need to be considered for filter",
+      "required": true,
+      "explode": true,
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": [
+            "available",
+            "pending",
+            "sold"
+          ],
+          "default": "available"
+        }
+      }
+    }
+  ]
+}

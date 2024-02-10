@@ -1,0 +1,7 @@
+<testsuite failures="0" name="0001_createdb_get_200_karate_dsl.feature" skipped="0" tests="1" time="2.355811"><testcase classname="0001_createdb_get_200_karate_dsl" name="CSRF_1 - Create and Populate Database with Dummy Data" time="2.355811"><system-out>Given url 'http://localhost:5000/createdb' ................................ passed
+And headers 'Content-Type: application/json, Accept: application/json' .... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.message == "Database populated." ....................... passed
+</system-out></testcase>
+</testsuite>

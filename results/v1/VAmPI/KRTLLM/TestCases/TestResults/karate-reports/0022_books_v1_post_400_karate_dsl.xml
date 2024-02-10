@@ -1,0 +1,28 @@
+<testsuite failures="1" name="0022_books_v1_post_400_karate_dsl.feature" skipped="0" tests="1" time="0.001265"><testcase classname="0022_books_v1_post_400_karate_dsl" name="add_book_01-AddBookWithInvalidTitle" time="0.001265"><failure message="js failed:&#10;&gt;&gt;&gt;&gt;&#10;01: body '{&quot;book_title&quot;:&quot;&quot;, &quot;secret&quot;:&quot;pass1secret&quot;}'&#10;&lt;&lt;&lt;&lt;&#10;org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:6 Expected ; but found {&quot;book_title&quot;:&quot;&quot;, &quot;secret&quot;:&quot;pass1secret&quot;}&#13;&#10;body '{&quot;book_title&quot;:&quot;&quot;, &quot;secret&quot;:&quot;pass1secret&quot;}'&#13;&#10;      ^&#10;&#10;- org.graalvm.polyglot.Context.eval(Context.java:425)&#10;- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)&#10;- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)&#10;- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)&#10;- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)&#10;- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)&#10;- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:541)&#10;&#10;classpath:0022_books_v1_post_400_karate_dsl.feature:5">Given url 'http://localhost:5000/books/v1' ................................ passed
+And request body '{"book_title":"", "secret":"pass1secret"}' .............. failed
+
+Stack Trace:
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: body '{"book_title":"", "secret":"pass1secret"}'
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:6 Expected ; but found {"book_title":"", "secret":"pass1secret"}&#13;
+body '{"book_title":"", "secret":"pass1secret"}'&#13;
+      ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:541)
+
+classpath:0022_books_v1_post_400_karate_dsl.feature:5&#13;
+	at &lt;feature&gt;.: And request body '{"book_title":"", "secret":"pass1secret"}' (classpath:0022_books_v1_post_400_karate_dsl.feature:5:5)&#13;
+
+When method POST .......................................................... skipped
+Then status 400 ........................................................... skipped
+And match response { "status": "fail", "message": "Book Already exists!" } . skipped
+</failure></testcase>
+</testsuite>

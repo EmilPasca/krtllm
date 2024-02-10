@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_summary",{distinct_id:"d4d6cc6c-5118-4597-9d7c-3583be2ad89f",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>Karate Summary Report</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">23</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Features</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-01-25 06:15:44 PM</div>
+  </div>
+</div>
+
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <a href="karate-timeline.html">Timeline</a>
+        </div>
+        <table class="features-table table table-sm">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Title</th>
+              <th class="num">Passed</th>
+              <th class="num">Failed</th>
+              <th class="num">Scenarios</th>
+              <th class="num">Time (ms)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="passed">
+              <td>
+                <a href="0001_createdb_get_200_karate_dsl.html">0001_createdb_get_200_karate_dsl.feature</a>
+              </td>
+              <td>CSRF_1 - Create and Populate Database with Dummy Data</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">2356</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="0002__get_200_karate_dsl.html">0002__get_200_karate_dsl.feature</a>
+              </td>
+              <td>API Security Testing Scenarios</td>
+              <td class="num">1</td>
+              <td class="num">6</td>
+              <td class="num">7</td>
+              <td class="num">85</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="0003_users_v1_get_200_karate_dsl.html">0003_users_v1_get_200_karate_dsl.feature</a>
+              </td>
+              <td>Basic_Info_About_All_Users</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">12</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="0004_users_v1__debug_get_200_karate_dsl.html">0004_users_v1__debug_get_200_karate_dsl.feature</a>
+              </td>
+              <td>API Security Testing Scenario</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">15</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="0005_users_v1_register_post_200_karate_dsl.html">0005_users_v1_register_post_200_karate_dsl.feature</a>
+              </td>
+              <td>Register User API Security Testing Scenarios</td>
+              <td class="num">0</td>
+              <td class="num">2</td>
+              <td class="num">2</td>
+              <td class="num">103</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="0006_users_v1_register_post_400_karate_dsl.html">0006_users_v1_register_post_400_karate_dsl.feature</a>
+              </td>
+              <td>API Security Testing Scenario 1-InvalidRequest</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">351</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="0007_users_v1_login_post_200_karate_dsl.html">0007_users_v1_login_post_200_karate_dsl.feature</a>
+              </td>
+              <td>API Security Testing 01-Login_Successful Scenario</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">22</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="0008_users_v1_login_post_400_karate_dsl.html">0008_users_v1_login_post_400_karate_dsl.feature</a>
+              </td>
+              <td>API Security Testing Scenario login_api_security_test</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">19</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="0009_users_v1_username_get_200_karate_dsl.html">0009_users_v1_username_get_200_karate_dsl.feature</a>
+              </td>
+              <td>SQLI-001 - SQL Injection Prevention</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">35</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="0010_users_v1_username_get_404_karate_dsl.html">0010_users_v1_username_get_404_karate_dsl.feature</a>
+              </td>
+              <td>CSRF-001 - Check for Cross Site Request Forgery vulnerability</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">51</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="0011_users_v1_username_delete_200_karate_dsl.html">0011_users_v1_username_delete_200_karate_dsl.feature</a>
+              </td>
+              <td>Delete User API Security Testing</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">3</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="0012_users_v1_username_delete_401_karate_dsl.html">0012_users_v1_username_delete_401_karate_dsl.feature</a>
+              </td>
+              <td>API Security Testing Scenario</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="0013_users_v1_username_delete_404_karate_dsl.html">0013_users_v1_username_delete_404_karate_dsl.feature</a>
+              </td>
+              <td>API Security Testing Scenario</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="0014_users_v1_username_email_put_204_karate_dsl.html">0014_users_v1_username_email_put_204_karate_dsl.feature</a>
+              </td>
+              <td>Update User Email</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="0015_users_v1_username_email_put_400_karate_dsl.html">0015_users_v1_username_email_put_400_karate_dsl.feature</a>
+              </td>
+              <td>API_Security_Test_001-EmailUpdate</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">2</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="0016_users_v1_username_email_put_401_karate_dsl.html">0016_users_v1_username_email_put_401_karate_dsl.feature</a>
+              </td>
+              <td>auth-test01-updateEmail</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="0017_users_v1_username_password_put_204_karate_dsl.html">0017_users_v1_username_password_put_204_karate_dsl.feature</a>
+              </td>
+              <td>Update User Password</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">2</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="0018_users_v1_username_password_put_400_karate_dsl.html">0018_users_v1_username_password_put_400_karate_dsl.feature</a>
+              </td>
+              <td>username-test_api_security_scenario</td>
+              <td class="num">0</td>
+              <td class="num">4</td>
+              <td class="num">4</td>
+              <td class="num">2</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="0019_users_v1_username_password_put_401_karate_dsl.html">0019_users_v1_username_password_put_401_karate_dsl.feature</a>
+              </td>
+              <td>username-test_api_security_scenario</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">2</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="0020_books_v1_get_200_karate_dsl.html">0020_books_v1_get_200_karate_dsl.feature</a>
+              </td>
+              <td>[ScenarioID]-GetAllBooks</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">15</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="0021_books_v1_post_200_karate_dsl.html">0021_books_v1_post_200_karate_dsl.feature</a>
+              </td>
+              <td>Add Book</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="0022_books_v1_post_400_karate_dsl.html">0022_books_v1_post_400_karate_dsl.feature</a>
+              </td>
+              <td>Add Book</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="0023_books_v1_post_401_karate_dsl.html">0023_books_v1_post_401_karate_dsl.feature</a>
+              </td>
+              <td>Add Book with Secret Content</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="0024_books_v1_book_title_get_200_karate_dsl.html">0024_books_v1_book_title_get_200_karate_dsl.feature</a>
+              </td>
+              <td>Retrieve Book Information</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">10</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="0025_books_v1_book_title_get_401_karate_dsl.html">0025_books_v1_book_title_get_401_karate_dsl.feature</a>
+              </td>
+              <td>BKR-001-BookRetrievalAPI</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="0026_books_v1_book_title_get_404_karate_dsl.html">0026_books_v1_book_title_get_404_karate_dsl.feature</a>
+              </td>
+              <td>BKR-002-BookRetrievalAPI</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
+

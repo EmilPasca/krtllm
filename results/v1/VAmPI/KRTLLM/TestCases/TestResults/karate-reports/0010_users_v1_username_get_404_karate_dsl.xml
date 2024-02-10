@@ -1,0 +1,19 @@
+<testsuite failures="1" name="0010_users_v1_username_get_404_karate_dsl.feature" skipped="0" tests="1" time="0.050709"><testcase classname="0010_users_v1_username_get_404_karate_dsl" name="CSRF-001 - Check for Cross Site Request Forgery vulnerability" time="0.050709"><failure message="match failed: EQUALS&#10;  $ | not equal | actual has 2 more key(s) than expected - {&quot;detail&quot;:&quot;The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.&quot;,&quot;title&quot;:&quot;Not Found&quot;,&quot;type&quot;:&quot;about:blank&quot;} (MAP:MAP)&#10;  {&quot;detail&quot;:&quot;The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.&quot;,&quot;status&quot;:404,&quot;title&quot;:&quot;Not Found&quot;,&quot;type&quot;:&quot;about:blank&quot;}&#10;  {&quot;status&quot;:&quot;fail&quot;,&quot;message&quot;:&quot;User not found&quot;}&#10;&#10;&#10;classpath:0010_users_v1_username_get_404_karate_dsl.feature:8">Given url 'http://localhost:5000/users/v1/users/v1/John.Doe' .............. passed
+And headers {} ............................................................ passed
+When method GET ........................................................... passed
+Then status 404 ........................................................... passed
+And print response ........................................................ passed
+And match response == ..................................................... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: match failed: EQUALS
+  $ | not equal | actual has 2 more key(s) than expected - {"detail":"The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.","title":"Not Found","type":"about:blank"} (MAP:MAP)
+  {"detail":"The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.","status":404,"title":"Not Found","type":"about:blank"}
+  {"status":"fail","message":"User not found"}
+
+
+classpath:0010_users_v1_username_get_404_karate_dsl.feature:8&#13;
+	at &lt;feature&gt;.: And match response == (classpath:0010_users_v1_username_get_404_karate_dsl.feature:8:8)&#13;
+
+</failure></testcase>
+</testsuite>

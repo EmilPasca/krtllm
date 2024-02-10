@@ -1,0 +1,15 @@
+<testsuite failures="1" name="0014_users_v1_username_email_put_204_karate_dsl.feature" skipped="0" tests="1" time="0"><testcase classname="0014_users_v1_username_email_put_204_karate_dsl" name="update_user_email_successfully" time="0"><failure message="no step-definition method match found for: URL path: /users/v1/{username}/email&#10;classpath:0014_users_v1_username_email_put_204_karate_dsl.feature:3">* URL path: /users/v1/{username}/email .................................... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: no step-definition method match found for: URL path: /users/v1/{username}/email
+classpath:0014_users_v1_username_email_put_204_karate_dsl.feature:3&#13;
+	at &lt;feature&gt;.: * URL path: /users/v1/{username}/email (classpath:0014_users_v1_username_email_put_204_karate_dsl.feature:3:3)&#13;
+
+* Request headers: { "Content-Type": "application/json", "Authorization": "Bearer token" } . skipped
+Given url '/users/v1/{username}/email' .................................... skipped
+And request body '{"email":"mail3@mail.com"}' ............................. skipped
+When method PUT ........................................................... skipped
+Then status 204 ........................................................... skipped
+And match response { "description": "Sucessfully updated user email", "content": {} } . skipped
+</failure></testcase>
+</testsuite>

@@ -1,0 +1,11 @@
+{
+  "path": "/v3.1/all",
+  "method": "GET",
+  "responses": {
+    "200": {
+      "description": "Success"
+    }
+  },
+  "requestBody": {},
+  "parameters": []
+}

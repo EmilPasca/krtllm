@@ -1,0 +1,21 @@
+{
+  "path": "/v3.1/independent",
+  "method": "GET",
+  "responses": {
+    "200": {
+      "description": "Success"
+    }
+  },
+  "requestBody": {},
+  "parameters": [
+    {
+      "name": "status",
+      "in": "query",
+      "description": "The status of inpendence, either {true} or {false}. If not defined it will be considered {true}.",
+      "schema": {
+        "type": "string",
+        "default": "true"
+      }
+    }
+  ]
+}

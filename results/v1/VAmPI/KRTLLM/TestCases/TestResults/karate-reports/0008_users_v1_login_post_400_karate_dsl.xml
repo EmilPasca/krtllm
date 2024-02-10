@@ -1,0 +1,13 @@
+<testsuite failures="1" name="0008_users_v1_login_post_400_karate_dsl.feature" skipped="0" tests="1" time="0.019283"><testcase classname="0008_users_v1_login_post_400_karate_dsl" name="login_api_security_test" time="0.019283"><failure message="status code was: 200, expected: 400, response time in milliseconds: 17, url: http://localhost:5000/users/v1/login, response: &#10;{&quot;auth_token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDYxOTk0MDMsImlhdCI6MTcwNjE5OTM0Mywic3ViIjoiSm9obi5Eb2UifQ.m0RvmPPujLpEDxxthF937C-v-K-TeO8vNRtqPXkPgF4&quot;, &quot;message&quot;: &quot;Successfully logged in.&quot;, &quot;status&quot;: &quot;success&quot;}&#10;classpath:0008_users_v1_login_post_400_karate_dsl.feature:10">Given url 'http://localhost:5000/users/v1/login' .......................... passed
+And request ............................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: status code was: 200, expected: 400, response time in milliseconds: 17, url: http://localhost:5000/users/v1/login, response: 
+{"auth_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDYxOTk0MDMsImlhdCI6MTcwNjE5OTM0Mywic3ViIjoiSm9obi5Eb2UifQ.m0RvmPPujLpEDxxthF937C-v-K-TeO8vNRtqPXkPgF4", "message": "Successfully logged in.", "status": "success"}
+classpath:0008_users_v1_login_post_400_karate_dsl.feature:10&#13;
+	at &lt;feature&gt;.: Then status 400 (classpath:0008_users_v1_login_post_400_karate_dsl.feature:10:10)&#13;
+
+</failure></testcase>
+</testsuite>

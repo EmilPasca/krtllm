@@ -1,0 +1,44 @@
+{
+  "path": "/users/v1/_debug",
+  "method": "GET",
+  "responses": {
+    "200": {
+      "description": "See all details of the users",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "users": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "admin": {
+                      "type": "boolean",
+                      "example": false
+                    },
+                    "email": {
+                      "type": "string",
+                      "example": "mail1@mail.com"
+                    },
+                    "password": {
+                      "type": "string",
+                      "example": "pass1"
+                    },
+                    "username": {
+                      "type": "string",
+                      "example": "name1"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requestBody": {},
+  "parameters": []
+}

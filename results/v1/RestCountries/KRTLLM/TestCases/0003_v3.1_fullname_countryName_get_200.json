@@ -1,0 +1,21 @@
+{
+  "path": "/v3.1/fullname/{countryName}",
+  "method": "GET",
+  "responses": {
+    "200": {
+      "description": "Success"
+    }
+  },
+  "requestBody": {},
+  "parameters": [
+    {
+      "name": "countryName",
+      "in": "path",
+      "description": "The full name of the country to request.",
+      "required": true,
+      "schema": {
+        "type": "string"
+      }
+    }
+  ]
+}

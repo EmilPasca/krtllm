@@ -1,0 +1,20 @@
+{
+  "path": "/v3.1/currency",
+  "method": "GET",
+  "responses": {
+    "200": {
+      "description": "Success"
+    }
+  },
+  "requestBody": {},
+  "parameters": [
+    {
+      "name": "currency",
+      "in": "query",
+      "description": "The currency to search for.",
+      "schema": {
+        "type": "string"
+      }
+    }
+  ]
+}

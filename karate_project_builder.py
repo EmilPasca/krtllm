@@ -6,7 +6,7 @@ import subprocess
 # Define the project structure
 import time
 
-api_name = "Swagger_Petstore_Lite"
+api_name = "petstore"
 project_name = f"{api_name}_karate_test"
 src_main_java_path = os.path.join(project_name, "src/main/java")
 src_test_java_path = os.path.join(project_name, "src/test/java")

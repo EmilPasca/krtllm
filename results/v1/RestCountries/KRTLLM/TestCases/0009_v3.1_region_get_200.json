@@ -1,0 +1,20 @@
+{
+  "path": "/v3.1/region",
+  "method": "GET",
+  "responses": {
+    "200": {
+      "description": "Success"
+    }
+  },
+  "requestBody": {},
+  "parameters": [
+    {
+      "name": "region",
+      "in": "query",
+      "description": "The region name to search for.",
+      "schema": {
+        "type": "string"
+      }
+    }
+  ]
+}

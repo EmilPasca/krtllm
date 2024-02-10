@@ -1,0 +1,142 @@
+openapi: 3.0.1
+info:
+  title: VAPI
+  description: VAPI
+  contact:
+    email: manybahtpage@gmail.com
+  version: 1.0.0
+externalDocs:
+  description: Base API
+  url: https://vapi.many.win
+servers:
+- url: https://vapi.many.win/
+- url: http://vapi.many.win/
+tags:
+- name: Default
+  description: Laibaht The Vtuber !
+  externalDocs:
+    description: Youtube Channel
+    url: https://www.youtube.com/channel/UCR1Htb-H1-tus7UPotPh69A
+- name: Vtubers Thai
+  description: (test 7 t)
+- name: Vtubers All
+  description: test
+- name: Vtubers Hololive
+  description: test
+- name: Vtubers Nijisanji
+  description: test
+paths:
+  /:
+    get:
+      tags:
+      - Default
+      responses:
+        "200":
+          description: successful operation
+          content: {}
+  /live:
+    get:
+      tags:
+      - Default
+      responses:
+        "200":
+          description: successful operation
+          content: {}
+  /other/thai:
+    get:
+      tags:
+      - Vtubers Thai
+      responses:
+        "200":
+          description: successful operation
+          content: {}
+  /other/thai/live:
+    get:
+      tags:
+      - Vtubers Thai
+      responses:
+        "200":
+          description: successful operation
+          content: {}
+  /other/thai/stats:
+    get:
+      tags:
+      - Vtubers Thai
+      responses:
+        "200":
+          description: successful operation
+          content: {}
+  /other/all:
+    get:
+      tags:
+      - Vtubers All
+      responses:
+        "200":
+          description: successful operation
+          content: {}
+  /other/all/live:
+    get:
+      tags:
+      - Vtubers All
+      responses:
+        "200":
+          description: successful operation
+          content: {}
+  /other/all/stats:
+    get:
+      tags:
+      - Vtubers All
+      responses:
+        "200":
+          description: successful operation
+          content: {}
+  /other/holo:
+    get:
+      tags:
+      - Vtubers Hololive
+      responses:
+        "200":
+          description: successful operation
+          content: {}
+  /other/holo/live:
+    get:
+      tags:
+      - Vtubers Hololive
+      responses:
+        "200":
+          description: successful operation
+          content: {}
+  /other/holo/stats:
+    get:
+      tags:
+      - Vtubers Hololive
+      responses:
+        "200":
+          description: successful operation
+          content: {}
+  /other/niji:
+    get:
+      tags:
+      - Vtubers Nijisanji
+      responses:
+        "200":
+          description: successful operation
+          content: {}
+  /other/niji/live:
+    get:
+      tags:
+      - Vtubers Nijisanji
+      responses:
+        "200":
+          description: successful operation
+          content: {}
+  /other/niji/stats:
+    get:
+      tags:
+      - Vtubers Nijisanji
+      responses:
+        "200":
+          description: successful operation
+          content: {}
+components: {}
+x-original-swagger-version: "2.0"

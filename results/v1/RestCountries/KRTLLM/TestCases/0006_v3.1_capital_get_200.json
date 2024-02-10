@@ -1,0 +1,20 @@
+{
+  "path": "/v3.1/capital",
+  "method": "GET",
+  "responses": {
+    "200": {
+      "description": "Success"
+    }
+  },
+  "requestBody": {},
+  "parameters": [
+    {
+      "name": "capital",
+      "in": "query",
+      "description": "The (part of the) capital name to search for.",
+      "schema": {
+        "type": "string"
+      }
+    }
+  ]
+}

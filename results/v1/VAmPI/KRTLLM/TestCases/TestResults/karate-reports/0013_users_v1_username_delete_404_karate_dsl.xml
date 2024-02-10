@@ -1,0 +1,12 @@
+<testsuite failures="1" name="0013_users_v1_username_delete_404_karate_dsl.feature" skipped="0" tests="1" time="0.000453"><testcase classname="0013_users_v1_username_delete_404_karate_dsl" name="[ScenarioID]-[Scenario Name]" time="0.000453"><failure message="java.net.URISyntaxException: Illegal character in path at index 40: http://localhost:5000/users/v1/users/v1/{username}&#10;classpath:0013_users_v1_username_delete_404_karate_dsl.feature:5">Given url 'http://localhost:5000/users/v1/users/v1/{username}' ............ passed
+When method DELETE ........................................................ failed
+
+Stack Trace:
+com.intuit.karate.KarateException: java.net.URISyntaxException: Illegal character in path at index 40: http://localhost:5000/users/v1/users/v1/{username}
+classpath:0013_users_v1_username_delete_404_karate_dsl.feature:5&#13;
+	at &lt;feature&gt;.: When method DELETE (classpath:0013_users_v1_username_delete_404_karate_dsl.feature:5:5)&#13;
+
+Then status 404 ........................................................... skipped
+And match responseBody {status: "fail", message: "User not found!"} ....... skipped
+</failure></testcase>
+</testsuite>

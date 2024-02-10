@@ -1,0 +1,94 @@
+<testsuite failures="6" name="0002__get_200_karate_dsl.feature" skipped="0" tests="7" time="0.084657"><testcase classname="0002__get_200_karate_dsl" name="1.0-SQL_Injection" time="0.014472"><system-out>Given url 'http://localhost:5000' ......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.message == "VAmPI the Vulnerable API" .................. passed
+</system-out></testcase>
+<testcase classname="0002__get_200_karate_dsl" name="2.0-Broken_Authentication" time="0.000794"><failure message="no step-definition method match found for: request body&#10;classpath:0002__get_200_karate_dsl.feature:11">Given url 'http://localhost:5000/login' ................................... passed
+And request body .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: no step-definition method match found for: request body
+classpath:0002__get_200_karate_dsl.feature:11&#13;
+	at &lt;feature&gt;.: And request body (classpath:0002__get_200_karate_dsl.feature:11:11)&#13;
+
+When method POST .......................................................... skipped
+Then status 401 ........................................................... skipped
+</failure></testcase>
+<testcase classname="0002__get_200_karate_dsl" name="3.0-CSRF" time="0.029819"><failure message="status code was: 200, expected: 403, response time in milliseconds: 16, url: http://localhost:5000/, response: &#10;{ &quot;message&quot;: &quot;VAmPI the Vulnerable API&quot;, &quot;help&quot;: &quot;VAmPI is a vulnerable on purpose API. It was created in order to evaluate the efficiency of third party tools in identifying vulnerabilities in APIs but it can also be used in learning/teaching purposes.&quot;, &quot;vulnerable&quot;:1}&#10;classpath:0002__get_200_karate_dsl.feature:22">Given url 'http://localhost:5000/' ........................................ passed
+And headers '{ "X-CSRF-Token": "wrong_token" }' ........................... passed
+When method GET ........................................................... passed
+Then status 403 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: status code was: 200, expected: 403, response time in milliseconds: 16, url: http://localhost:5000/, response: 
+{ "message": "VAmPI the Vulnerable API", "help": "VAmPI is a vulnerable on purpose API. It was created in order to evaluate the efficiency of third party tools in identifying vulnerabilities in APIs but it can also be used in learning/teaching purposes.", "vulnerable":1}
+classpath:0002__get_200_karate_dsl.feature:22&#13;
+	at &lt;feature&gt;.: Then status 403 (classpath:0002__get_200_karate_dsl.feature:22:22)&#13;
+
+</failure></testcase>
+<testcase classname="0002__get_200_karate_dsl" name="4.0-Information_Exposure" time="0.015126"><failure message="status code was: 404, expected: 401, response time in milliseconds: 11, url: http://localhost:5000/users, response: &#10;{&#10;  &quot;detail&quot;: &quot;The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.&quot;,&#10;  &quot;status&quot;: 404,&#10;  &quot;title&quot;: &quot;Not Found&quot;,&#10;  &quot;type&quot;: &quot;about:blank&quot;&#10;}&#10;&#10;classpath:0002__get_200_karate_dsl.feature:28">Given url 'http://localhost:5000/users' ................................... passed
+And headers '{ "Authorization": "Bearer wrong_access_token" }' ............ passed
+When method GET ........................................................... passed
+Then status 401 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: status code was: 404, expected: 401, response time in milliseconds: 11, url: http://localhost:5000/users, response: 
+{
+  "detail": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.",
+  "status": 404,
+  "title": "Not Found",
+  "type": "about:blank"
+}
+
+classpath:0002__get_200_karate_dsl.feature:28&#13;
+	at &lt;feature&gt;.: Then status 401 (classpath:0002__get_200_karate_dsl.feature:28:28)&#13;
+
+</failure></testcase>
+<testcase classname="0002__get_200_karate_dsl" name="5.0-Insecure_Deserialization" time="0.009251"><failure message="status code was: 404, expected: 415, response time in milliseconds: 6, url: http://localhost:5000/users, response: &#10;{&#10;  &quot;detail&quot;: &quot;The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.&quot;,&#10;  &quot;status&quot;: 404,&#10;  &quot;title&quot;: &quot;Not Found&quot;,&#10;  &quot;type&quot;: &quot;about:blank&quot;&#10;}&#10;&#10;classpath:0002__get_200_karate_dsl.feature:34">Given url 'http://localhost:5000/users' ................................... passed
+And headers '{ "Content-Type": "application/x-yaml", "Accept": "text/plain" }' . passed
+When method GET ........................................................... passed
+Then status 415 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: status code was: 404, expected: 415, response time in milliseconds: 6, url: http://localhost:5000/users, response: 
+{
+  "detail": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.",
+  "status": 404,
+  "title": "Not Found",
+  "type": "about:blank"
+}
+
+classpath:0002__get_200_karate_dsl.feature:34&#13;
+	at &lt;feature&gt;.: Then status 415 (classpath:0002__get_200_karate_dsl.feature:34:34)&#13;
+
+</failure></testcase>
+<testcase classname="0002__get_200_karate_dsl" name="6.0-Cross_Site_Scripting" time="0.003751"><failure message="java.net.URISyntaxException: Illegal character in query at index 33: http://localhost:5000/index.html?&lt;script&gt;alert(1)&lt;/script&gt;&#10;classpath:0002__get_200_karate_dsl.feature:39">Given url 'http://localhost:5000/index.html?&lt;script&gt;alert(1)&lt;/script&gt;' .... passed
+And headers { "X-Content-Type-Options": "nosniff" } ....................... passed
+When method GET ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: java.net.URISyntaxException: Illegal character in query at index 33: http://localhost:5000/index.html?&lt;script&gt;alert(1)&lt;/script&gt;
+classpath:0002__get_200_karate_dsl.feature:39&#13;
+	at &lt;feature&gt;.: When method GET (classpath:0002__get_200_karate_dsl.feature:39:39)&#13;
+
+Then status 200 ........................................................... skipped
+</failure></testcase>
+<testcase classname="0002__get_200_karate_dsl" name="7.0-Insecure_Direct_Object_Reference" time="0.011444"><failure message="status code was: 404, expected: 403, response time in milliseconds: 8, url: http://localhost:5000/files/private, response: &#10;{&#10;  &quot;detail&quot;: &quot;The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.&quot;,&#10;  &quot;status&quot;: 404,&#10;  &quot;title&quot;: &quot;Not Found&quot;,&#10;  &quot;type&quot;: &quot;about:blank&quot;&#10;}&#10;&#10;classpath:0002__get_200_karate_dsl.feature:46">Given url 'http://localhost:5000/files/private' ........................... passed
+When headers '{ "Authorization": "Bearer valid_access_token" }' ........... passed
+And method GET ............................................................ passed
+Then status 403 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: status code was: 404, expected: 403, response time in milliseconds: 8, url: http://localhost:5000/files/private, response: 
+{
+  "detail": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.",
+  "status": 404,
+  "title": "Not Found",
+  "type": "about:blank"
+}
+
+classpath:0002__get_200_karate_dsl.feature:46&#13;
+	at &lt;feature&gt;.: Then status 403 (classpath:0002__get_200_karate_dsl.feature:46:46)&#13;
+
+</failure></testcase>
+</testsuite>
