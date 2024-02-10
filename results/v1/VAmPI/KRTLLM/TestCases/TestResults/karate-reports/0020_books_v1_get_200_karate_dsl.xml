@@ -1,0 +1,16 @@
+<testsuite failures="1" name="0020_books_v1_get_200_karate_dsl.feature" skipped="0" tests="1" time="0.01549"><testcase classname="0020_books_v1_get_200_karate_dsl" name="[ScenarioID]-GetAllBooks" time="0.01549"><failure message="match failed: CONTAINS&#10;  $ | actual path does not exist (STRING:MAP)&#10;  '#notpresent'&#10;  {&quot;Books&quot;:[{&quot;book_title&quot;:&quot;bookTitle77&quot;,&quot;user&quot;:&quot;name1&quot;},{&quot;book_title&quot;:&quot;bookTitle85&quot;,&quot;user&quot;:&quot;name2&quot;},{&quot;book_title&quot;:&quot;bookTitle47&quot;,&quot;user&quot;:&quot;admin&quot;}]}&#10;&#10;classpath:0020_books_v1_get_200_karate_dsl.feature:7">Given url 'http://localhost:5000/books/v1' ................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.body contains { "Books": [{"book_title": "bookTitle77", "user": "name1"}, {"book_title": "bookTitle85", "user": "name2"}, {"book_title": "bookTitle47", "user": "admin"}]} . failed
+
+Stack Trace:
+com.intuit.karate.KarateException: match failed: CONTAINS
+  $ | actual path does not exist (STRING:MAP)
+  '#notpresent'
+  {"Books":[{"book_title":"bookTitle77","user":"name1"},{"book_title":"bookTitle85","user":"name2"},{"book_title":"bookTitle47","user":"admin"}]}
+
+classpath:0020_books_v1_get_200_karate_dsl.feature:7&#13;
+	at &lt;feature&gt;.: And match response.body contains { "Books": [{"book_title": "bookTitle77", "user": "name1"}, {"book_title": "bookTitle85", "user": "name2"}, {"book_title": "bookTitle47", "user": "admin"}]} (classpath:0020_books_v1_get_200_karate_dsl.feature:7:7)&#13;
+
+</failure></testcase>
+</testsuite>

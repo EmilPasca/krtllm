@@ -1,0 +1,28 @@
+<testsuite failures="1" name="0021_books_v1_post_200_karate_dsl.feature" skipped="0" tests="1" time="0.001267"><testcase classname="0021_books_v1_post_200_karate_dsl" name="add-book-successfully" time="0.001267"><failure message="js failed:&#10;&gt;&gt;&gt;&gt;&#10;01: body { &quot;book_title&quot;: &quot;book99&quot;, &quot;secret&quot;: &quot;pass1secret&quot; }&#10;&lt;&lt;&lt;&lt;&#10;org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:5 Expected ; but found {&#13;&#10;body { &quot;book_title&quot;: &quot;book99&quot;, &quot;secret&quot;: &quot;pass1secret&quot; }&#13;&#10;     ^&#10;&#10;- org.graalvm.polyglot.Context.eval(Context.java:425)&#10;- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)&#10;- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)&#10;- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)&#10;- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)&#10;- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)&#10;- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:541)&#10;&#10;classpath:0021_books_v1_post_200_karate_dsl.feature:4">Given url 'http://localhost:5000/books/v1' ................................ passed
+And request body { "book_title": "book99", "secret": "pass1secret" } ...... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: body { "book_title": "book99", "secret": "pass1secret" }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:5 Expected ; but found {&#13;
+body { "book_title": "book99", "secret": "pass1secret" }&#13;
+     ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:541)
+
+classpath:0021_books_v1_post_200_karate_dsl.feature:4&#13;
+	at &lt;feature&gt;.: And request body { "book_title": "book99", "secret": "pass1secret" } (classpath:0021_books_v1_post_200_karate_dsl.feature:4:4)&#13;
+
+When method POST .......................................................... skipped
+Then status 200 ........................................................... skipped
+And match response.body == '{"message":"Book has been added.", "status":"success"}' . skipped
+</failure></testcase>
+</testsuite>

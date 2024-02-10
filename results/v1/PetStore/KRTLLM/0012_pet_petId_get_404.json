@@ -1,0 +1,22 @@
+{
+  "path": "/pet/{petId}",
+  "method": "GET",
+  "responses": {
+    "404": {
+      "description": "Pet not found"
+    }
+  },
+  "requestBody": {},
+  "parameters": [
+    {
+      "name": "petId",
+      "in": "path",
+      "description": "ID of pet to return",
+      "required": true,
+      "schema": {
+        "type": "integer",
+        "format": "int64"
+      }
+    }
+  ]
+}

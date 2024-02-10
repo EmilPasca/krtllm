@@ -1,0 +1,25 @@
+{
+  "path": "/pet/findByTags",
+  "method": "GET",
+  "responses": {
+    "400": {
+      "description": "Invalid tag value"
+    }
+  },
+  "requestBody": {},
+  "parameters": [
+    {
+      "name": "tags",
+      "in": "query",
+      "description": "Tags to filter by",
+      "required": true,
+      "explode": true,
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    }
+  ]
+}

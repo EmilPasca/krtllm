@@ -1,0 +1,13 @@
+<testsuite failures="1" name="0024_books_v1_book_title_get_200_karate_dsl.feature" skipped="0" tests="1" time="0.009591"><testcase classname="0024_books_v1_book_title_get_200_karate_dsl" name="retrieve-book-info-successfully" time="0.009591"><failure message="status code was: 401, expected: 200, response time in milliseconds: 8, url: http://localhost:5000/books/v1/bookTitle77, response: &#10;{ &quot;status&quot;: &quot;fail&quot;, &quot;message&quot;: &quot;Invalid token&quot;}&#10;classpath:0024_books_v1_book_title_get_200_karate_dsl.feature:6">Given url 'http://localhost:5000/books/v1/bookTitle77' .................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: status code was: 401, expected: 200, response time in milliseconds: 8, url: http://localhost:5000/books/v1/bookTitle77, response: 
+{ "status": "fail", "message": "Invalid token"}
+classpath:0024_books_v1_book_title_get_200_karate_dsl.feature:6&#13;
+	at &lt;feature&gt;.: Then status 200 (classpath:0024_books_v1_book_title_get_200_karate_dsl.feature:6:6)&#13;
+
+And match response == ..................................................... skipped
+</failure></testcase>
+</testsuite>

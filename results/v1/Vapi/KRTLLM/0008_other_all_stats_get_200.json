@@ -1,0 +1,12 @@
+{
+  "path": "/other/all/stats",
+  "method": "GET",
+  "responses": {
+    "200": {
+      "description": "successful operation",
+      "content": {}
+    }
+  },
+  "requestBody": {},
+  "parameters": []
+}

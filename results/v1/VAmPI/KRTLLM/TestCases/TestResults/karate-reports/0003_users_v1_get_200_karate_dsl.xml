@@ -1,0 +1,5 @@
+<testsuite failures="0" name="0003_users_v1_get_200_karate_dsl.feature" skipped="0" tests="1" time="0.012466"><testcase classname="0003_users_v1_get_200_karate_dsl" name="Basic_Info_About_All_Users" time="0.012466"><system-out>Given url 'http://localhost:5000/users/v1' ................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+</system-out></testcase>
+</testsuite>

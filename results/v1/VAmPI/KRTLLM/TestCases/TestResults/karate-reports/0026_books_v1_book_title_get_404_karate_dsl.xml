@@ -1,0 +1,26 @@
+<testsuite failures="1" name="0026_books_v1_book_title_get_404_karate_dsl.feature" skipped="0" tests="1" time="0.001629"><testcase classname="0026_books_v1_book_title_get_404_karate_dsl" name="BKR-002-BookRetrievalAPI" time="0.001629"><failure message="js failed:&#10;&gt;&gt;&gt;&gt;&#10;01: body {}&#10;&lt;&lt;&lt;&lt;&#10;org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:5 Expected ; but found {&#13;&#10;body {}&#13;&#10;     ^&#10;&#10;- org.graalvm.polyglot.Context.eval(Context.java:425)&#10;- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)&#10;- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)&#10;- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)&#10;- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)&#10;- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)&#10;- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:541)&#10;&#10;classpath:0026_books_v1_book_title_get_404_karate_dsl.feature:5">Given url 'http://localhost:5000/books/v1/{book_title}' ................... passed
+And request body {} ....................................................... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: body {}
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:5 Expected ; but found {&#13;
+body {}&#13;
+     ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2157)
+- com.intuit.karate.core.ScenarioEngine.request(ScenarioEngine.java:541)
+
+classpath:0026_books_v1_book_title_get_404_karate_dsl.feature:5&#13;
+	at &lt;feature&gt;.: And request body {} (classpath:0026_books_v1_book_title_get_404_karate_dsl.feature:5:5)&#13;
+
+When method GET ........................................................... skipped
+</failure></testcase>
+</testsuite>

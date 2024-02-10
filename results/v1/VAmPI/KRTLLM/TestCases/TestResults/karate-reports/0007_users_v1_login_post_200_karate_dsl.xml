@@ -1,0 +1,8 @@
+<testsuite failures="0" name="0007_users_v1_login_post_200_karate_dsl.feature" skipped="0" tests="1" time="0.021851"><testcase classname="0007_users_v1_login_post_200_karate_dsl" name="01-Login_Successful" time="0.021851"><system-out>Given url 'http://localhost:5000/users/v1/login' .......................... passed
+And headers '{ "Content-Type": "application/json"}' ....................... passed
+And request ............................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And match response.status == "success" .................................... passed
+</system-out></testcase>
+</testsuite>

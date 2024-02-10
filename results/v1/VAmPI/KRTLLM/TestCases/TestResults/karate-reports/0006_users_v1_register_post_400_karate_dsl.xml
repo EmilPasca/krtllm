@@ -1,0 +1,17 @@
+<testsuite failures="1" name="0006_users_v1_register_post_400_karate_dsl.feature" skipped="0" tests="1" time="0.350913"><testcase classname="0006_users_v1_register_post_400_karate_dsl" name="1-InvalidRequest" time="0.350913"><failure message="match failed: EQUALS&#10;  $ | not equal (STRING:STRING)&#10;  'Successfully registered. Login to receive an auth token.'&#10;  'Invalid Request'&#10;&#10;classpath:0006_users_v1_register_post_400_karate_dsl.feature:11">Given url 'http://localhost:5000/users/v1/register' ....................... passed
+And request ............................................................... passed
+When method POST .......................................................... passed
+Then status: 400 .......................................................... passed
+And match response.message == "Invalid Request" ........................... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'Successfully registered. Login to receive an auth token.'
+  'Invalid Request'
+
+classpath:0006_users_v1_register_post_400_karate_dsl.feature:11&#13;
+	at &lt;feature&gt;.: And match response.message == "Invalid Request" (classpath:0006_users_v1_register_post_400_karate_dsl.feature:11:11)&#13;
+
+</failure></testcase>
+</testsuite>

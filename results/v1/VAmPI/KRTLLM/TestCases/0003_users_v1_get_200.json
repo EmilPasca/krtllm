@@ -1,0 +1,31 @@
+{
+  "path": "/users/v1",
+  "method": "GET",
+  "responses": {
+    "200": {
+      "description": "See basic info about all users",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "example": "mail1@mail.com"
+                },
+                "username": {
+                  "type": "string",
+                  "example": "name1"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requestBody": {},
+  "parameters": []
+}

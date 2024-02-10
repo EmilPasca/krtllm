@@ -1,0 +1,30 @@
+{
+  "path": "/v3.1/name/{countryName}",
+  "method": "GET",
+  "responses": {
+    "200": {
+      "description": "Success"
+    }
+  },
+  "requestBody": {},
+  "parameters": [
+    {
+      "name": "countryName",
+      "in": "path",
+      "description": "The full name of the country to request.",
+      "required": true,
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "name": "fullname",
+      "in": "query",
+      "description": "Defines whether the search is on the fullname or a part of the name, either {true} or {false}. \r\nIf not defined it will be considered {false}.",
+      "schema": {
+        "type": "string",
+        "default": "false"
+      }
+    }
+  ]
+}

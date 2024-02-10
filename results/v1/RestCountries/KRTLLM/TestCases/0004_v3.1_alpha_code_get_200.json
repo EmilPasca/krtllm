@@ -1,0 +1,21 @@
+{
+  "path": "/v3.1/alpha/{code}",
+  "method": "GET",
+  "responses": {
+    "200": {
+      "description": "Success"
+    }
+  },
+  "requestBody": {},
+  "parameters": [
+    {
+      "name": "code",
+      "in": "path",
+      "description": "The ISO 3166-1 2-letter or 3-letter country code.",
+      "required": true,
+      "schema": {
+        "type": "string"
+      }
+    }
+  ]
+}

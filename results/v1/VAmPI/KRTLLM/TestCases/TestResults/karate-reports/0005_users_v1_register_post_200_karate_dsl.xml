@@ -1,0 +1,37 @@
+<testsuite failures="2" name="0005_users_v1_register_post_200_karate_dsl.feature" skipped="0" tests="2" time="0.102679"><testcase classname="0005_users_v1_register_post_200_karate_dsl" name="1-RegisterUserSuccessfully" time="0.092301"><failure message="status code was: 415, expected: 200, response time in milliseconds: 7, url: http://localhost:5000/users/v1/register, response: &#10;{&#10;  &quot;detail&quot;: &quot;Invalid Content-type (text/plain; charset=UTF-8), expected JSON data&quot;,&#10;  &quot;status&quot;: 415,&#10;  &quot;title&quot;: &quot;Unsupported Media Type&quot;,&#10;  &quot;type&quot;: &quot;about:blank&quot;&#10;}&#10;&#10;classpath:0005_users_v1_register_post_200_karate_dsl.feature:6">Given url 'http://localhost:5000/users/v1/register' ....................... passed
+And request '{"username":"John.Doe", "password":"password123", "email":"user@tempmail.com"}' . passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: status code was: 415, expected: 200, response time in milliseconds: 7, url: http://localhost:5000/users/v1/register, response: 
+{
+  "detail": "Invalid Content-type (text/plain; charset=UTF-8), expected JSON data",
+  "status": 415,
+  "title": "Unsupported Media Type",
+  "type": "about:blank"
+}
+
+classpath:0005_users_v1_register_post_200_karate_dsl.feature:6&#13;
+	at &lt;feature&gt;.: Then status 200 (classpath:0005_users_v1_register_post_200_karate_dsl.feature:6:6)&#13;
+
+</failure></testcase>
+<testcase classname="0005_users_v1_register_post_200_karate_dsl" name="2-RegisterUserFailedAuthentication" time="0.010378"><failure message="status code was: 415, expected: 401, response time in milliseconds: 7, url: http://localhost:5000/users/v1/register, response: &#10;{&#10;  &quot;detail&quot;: &quot;Invalid Content-type (text/plain; charset=UTF-8), expected JSON data&quot;,&#10;  &quot;status&quot;: 415,&#10;  &quot;title&quot;: &quot;Unsupported Media Type&quot;,&#10;  &quot;type&quot;: &quot;about:blank&quot;&#10;}&#10;&#10;classpath:0005_users_v1_register_post_200_karate_dsl.feature:11">Given url 'http://localhost:5000/users/v1/register' ....................... passed
+And request '{"username": "", "password":"password123", "email":"user@tempmail.com"}' . passed
+When method POST .......................................................... passed
+Then status 401 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: status code was: 415, expected: 401, response time in milliseconds: 7, url: http://localhost:5000/users/v1/register, response: 
+{
+  "detail": "Invalid Content-type (text/plain; charset=UTF-8), expected JSON data",
+  "status": 415,
+  "title": "Unsupported Media Type",
+  "type": "about:blank"
+}
+
+classpath:0005_users_v1_register_post_200_karate_dsl.feature:11&#13;
+	at &lt;feature&gt;.: Then status 401 (classpath:0005_users_v1_register_post_200_karate_dsl.feature:11:11)&#13;
+
+</failure></testcase>
+</testsuite>

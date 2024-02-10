@@ -1,0 +1,46 @@
+{
+  "path": "/books/v1/{book_title}",
+  "method": "GET",
+  "responses": {
+    "200": {
+      "description": "Successfully retrieve book info",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "book_title": {
+                  "type": "string",
+                  "example": "bookTitle77"
+                },
+                "owner": {
+                  "type": "string",
+                  "example": "name1"
+                },
+                "secret": {
+                  "type": "string",
+                  "example": "secret for bookTitle77"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requestBody": {},
+  "parameters": [
+    {
+      "name": "book_title",
+      "in": "path",
+      "description": "retrieve book data",
+      "required": true,
+      "schema": {
+        "type": "string",
+        "example": "bookTitle77"
+      }
+    }
+  ]
+}

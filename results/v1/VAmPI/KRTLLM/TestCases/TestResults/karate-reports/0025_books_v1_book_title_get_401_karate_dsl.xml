@@ -1,0 +1,12 @@
+<testsuite failures="1" name="0025_books_v1_book_title_get_401_karate_dsl.feature" skipped="0" tests="1" time="0.000886"><testcase classname="0025_books_v1_book_title_get_401_karate_dsl" name="BKR-001-BookRetrievalAPI" time="0.000886"><failure message="java.net.URISyntaxException: Illegal character in path at index 31: http://localhost:5000/books/v1/{book_title}&#10;classpath:0025_books_v1_book_title_get_401_karate_dsl.feature:4">Given url 'http://localhost:5000/books/v1/{book_title}' ................... passed
+When method GET ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: java.net.URISyntaxException: Illegal character in path at index 31: http://localhost:5000/books/v1/{book_title}
+classpath:0025_books_v1_book_title_get_401_karate_dsl.feature:4&#13;
+	at &lt;feature&gt;.: When method GET (classpath:0025_books_v1_book_title_get_401_karate_dsl.feature:4:4)&#13;
+
+Then status 200 ........................................................... skipped
+And match response.body == ................................................ skipped
+</failure></testcase>
+</testsuite>

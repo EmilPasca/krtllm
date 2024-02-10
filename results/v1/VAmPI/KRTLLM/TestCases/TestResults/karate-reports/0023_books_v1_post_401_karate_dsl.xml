@@ -1,0 +1,12 @@
+<testsuite failures="1" name="0023_books_v1_post_401_karate_dsl.feature" skipped="0" tests="1" time="0.000083"><testcase classname="0023_books_v1_post_401_karate_dsl" name="add-book-with-secret-content" time="0.000083"><failure message="no step-definition method match found for: request body&#10;classpath:0023_books_v1_post_401_karate_dsl.feature:5">Given url 'http://localhost:5000/books/v1' ................................ passed
+And request body .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.KarateException: no step-definition method match found for: request body
+classpath:0023_books_v1_post_401_karate_dsl.feature:5&#13;
+	at &lt;feature&gt;.: And request body (classpath:0023_books_v1_post_401_karate_dsl.feature:5:5)&#13;
+
+When method POST .......................................................... skipped
+Then status 200 ........................................................... skipped
+</failure></testcase>
+</testsuite>

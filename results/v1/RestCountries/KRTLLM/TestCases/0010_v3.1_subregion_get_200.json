@@ -1,0 +1,20 @@
+{
+  "path": "/v3.1/subregion",
+  "method": "GET",
+  "responses": {
+    "200": {
+      "description": "Success"
+    }
+  },
+  "requestBody": {},
+  "parameters": [
+    {
+      "name": "subregion",
+      "in": "query",
+      "description": "The subregion name to search for.",
+      "schema": {
+        "type": "string"
+      }
+    }
+  ]
+}

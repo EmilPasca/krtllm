@@ -1,0 +1,52 @@
+{
+  "path": "/books/v1",
+  "method": "POST",
+  "responses": {
+    "200": {
+      "description": "Sucessfully added a book",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "message": {
+                "type": "string",
+                "example": "Book has been added."
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "success",
+                  "fail"
+                ],
+                "example": "success"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requestBody": {
+    "description": "Add new book with title and secret content only available to the user who added it.",
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "book_title": {
+              "type": "string",
+              "example": "book99"
+            },
+            "secret": {
+              "type": "string",
+              "example": "pass1secret"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+  },
+  "parameters": []
+}

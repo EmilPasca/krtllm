@@ -1,0 +1,30 @@
+{
+  "path": "/pet/{petId}",
+  "method": "DELETE",
+  "responses": {
+    "404": {
+      "description": "Pet not found"
+    }
+  },
+  "requestBody": {},
+  "parameters": [
+    {
+      "name": "api_key",
+      "in": "header",
+      "required": false,
+      "schema": {
+        "type": "string"
+      }
+    },
+    {
+      "name": "petId",
+      "in": "path",
+      "description": "Pet id to delete",
+      "required": true,
+      "schema": {
+        "type": "integer",
+        "format": "int64"
+      }
+    }
+  ]
+}

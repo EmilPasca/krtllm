@@ -1,0 +1,56 @@
+{
+  "path": "/users/v1/register",
+  "method": "POST",
+  "responses": {
+    "200": {
+      "description": "Sucessfully created user",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "message": {
+                "type": "string",
+                "example": "Successfully registered. Login to receive an auth token."
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "success",
+                  "fail"
+                ],
+                "example": "success"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requestBody": {
+    "description": "Username of the user",
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "username": {
+              "type": "string",
+              "example": "John.Doe"
+            },
+            "password": {
+              "type": "string",
+              "example": "password123"
+            },
+            "email": {
+              "type": "string",
+              "example": "user@tempmail.com"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+  },
+  "parameters": []
+}

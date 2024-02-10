@@ -1,0 +1,39 @@
+{
+  "path": "/users/v1/{username}/email",
+  "method": "PUT",
+  "responses": {
+    "204": {
+      "description": "Sucessfully updated user email",
+      "content": {}
+    }
+  },
+  "requestBody": {
+    "description": "field to update",
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string",
+              "example": "mail3@mail.com"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+  },
+  "parameters": [
+    {
+      "name": "username",
+      "in": "path",
+      "description": "username to update email",
+      "required": true,
+      "schema": {
+        "type": "string",
+        "example": "name1"
+      }
+    }
+  ]
+}
