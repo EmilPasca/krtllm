@@ -54,3 +54,6 @@ We've documented our framework performance in terms of test generated, test resu
 - Explore `{ApiName}/KRTLLM/TestCases/` for the test scripts and `{ApiName}/KRTLLM/TestResults/` for the outcome of these tests.
 -  `GeneratedFramework` for the test scripts and `KRTLLM/TestResults/` for the outcome of these tests.
 - We've included test cases and test results from other frameworks like `RESTest` for comparison.
+
+Test Runs v1:
+KRTLLM - VamPI - [Karate Reports](results\v1\VAmPI\KRTLLM).
