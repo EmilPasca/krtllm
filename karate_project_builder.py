@@ -40,6 +40,22 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
             <version>1.4.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>net.masterthought</groupId>
+            <artifactId>cucumber-reporting</artifactId>
+            <version>5.7.4</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.13.0</version> <!-- Make sure to use a version compatible with your project -->
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.13.0</version> <!-- Same as above -->
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -73,8 +89,12 @@ import org.junit.jupiter.api.Test;
 public class KarateTestRunner {
     @Test
     void testFeatureFile(){
-        Results results = Runner.path("classpath:").backupReportDir(false)
-                .outputJunitXml(true).outputHtmlReport(true).parallel(1);
+        Results results = Runner.path("classpath:")
+                .reportDir("target/karate-reports") // Specify the report directory
+                .backupReportDir(false)
+                .outputJunitXml(true)
+                .outputCucumberJson(true)
+                .parallel(1);
         assert results.getFeaturesFailed() == 0;
     }
 }
@@ -83,6 +103,46 @@ public class KarateTestRunner {
 # Write the test runner
 with open(os.path.join(karate_runner_path, "KarateTestRunner.java"), "w") as f:
     f.write(runner_content)
+
+# Create the Cucumber Reprot generator
+cucumber_report_content = """
+package karate;
+
+import net.masterthought.cucumber.Configuration;
+import net.masterthought.cucumber.ReportBuilder;
+import net.masterthought.cucumber.json.support.Status;
+
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
+public class CucumberReportGenerator {
+
+    public static void main(String[] args) {
+        File reportOutputDirectory = new File("target/karate-reports");
+        List<String> jsonFiles = new ArrayList<>();
+        jsonFiles.add("target/karate-reports"); // path to the Karate JSON output
+
+        String buildNumber = "1";
+        String projectName = "Vampi"; //TODO Make dynamic project name
+
+        Configuration configuration = new Configuration(reportOutputDirectory, projectName);
+        configuration.setBuildNumber(buildNumber);
+        configuration.addClassifications("Platform", System.getProperty("os.name"));
+        configuration.addClassifications("Branch", "release/1.0");
+//        configuration.setPresentationModes(PresentationMode.RUN_WITH_JENKINS);
+//        configuration.setQualifierStatus("someQualifier", Status.PASSED);
+
+        ReportBuilder reportBuilder = new ReportBuilder(jsonFiles, configuration);
+        reportBuilder.generateReports();
+    }
+}
+"""
+
+# Write the cucumber report generator
+with open(os.path.join(karate_runner_path, "CucumberReportGenerator.java"), "w") as f:
+    f.write(cucumber_report_content)    
 
 # Move feature files to the resources path
 base_path = os.getcwd()  # Gets the current working directory which is the project root
