@@ -56,4 +56,4 @@ We've documented our framework performance in terms of test generated, test resu
 - We've included test cases and test results from other frameworks like `RESTest` for comparison.
 
 Test Runs v1:
-KRTLLM - VamPI - [Karate Reports](results\v1\VAmPI\KRTLLM).
+KRTLLM - VamPI - [Karate Reports](results/v1/VAmPI/KRTLLM/report.md).
