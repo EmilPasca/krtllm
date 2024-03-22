@@ -1,0 +1,50 @@
+{
+  "path": "/books/v1",
+  "method": "GET",
+  "responses": {
+    "200": {
+      "description": "See all books",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "Books": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "book_title": {
+                      "type": "string"
+                    },
+                    "user": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "example": {
+            "Books": [
+              {
+                "book_title": "bookTitle77",
+                "user": "name1"
+              },
+              {
+                "book_title": "bookTitle85",
+                "user": "name2"
+              },
+              {
+                "book_title": "bookTitle47",
+                "user": "admin"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "requestBody": {},
+  "parameters": []
+}

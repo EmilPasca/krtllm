@@ -1,0 +1,24 @@
+{
+  "path": "/createdb",
+  "method": "GET",
+  "responses": {
+    "200": {
+      "description": "Creates and populates the database with dummy data",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "message": {
+                "type": "string",
+                "example": "Database populated."
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requestBody": {},
+  "parameters": []
+}

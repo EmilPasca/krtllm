@@ -1,0 +1,42 @@
+{
+  "path": "/books/v1/{book_title}",
+  "method": "GET",
+  "responses": {
+    "404": {
+      "description": "Book not found",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "string",
+                "enum": [
+                  "fail"
+                ],
+                "example": "fail"
+              },
+              "message": {
+                "type": "string",
+                "example": "Book not found!"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requestBody": {},
+  "parameters": [
+    {
+      "name": "book_title",
+      "in": "path",
+      "description": "retrieve book data",
+      "required": true,
+      "schema": {
+        "type": "string",
+        "example": "bookTitle77"
+      }
+    }
+  ]
+}

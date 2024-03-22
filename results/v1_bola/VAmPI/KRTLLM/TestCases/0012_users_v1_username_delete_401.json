@@ -1,0 +1,42 @@
+{
+  "path": "/users/v1/{username}",
+  "method": "DELETE",
+  "responses": {
+    "401": {
+      "description": "User not authorized",
+      "content": {
+        "application/json": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "string",
+                "example": "fail",
+                "enum": [
+                  "fail"
+                ]
+              },
+              "message": {
+                "type": "string",
+                "example": "Only Admins may delete users!"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requestBody": {},
+  "parameters": [
+    {
+      "name": "username",
+      "in": "path",
+      "description": "Delete username",
+      "required": true,
+      "schema": {
+        "type": "string",
+        "example": "name1"
+      }
+    }
+  ]
+}

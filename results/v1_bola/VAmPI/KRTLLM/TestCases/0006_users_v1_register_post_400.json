@@ -1,0 +1,36 @@
+{
+  "path": "/users/v1/register",
+  "method": "POST",
+  "responses": {
+    "400": {
+      "description": "Invalid request",
+      "content": {}
+    }
+  },
+  "requestBody": {
+    "description": "Username of the user",
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "username": {
+              "type": "string",
+              "example": "John.Doe"
+            },
+            "password": {
+              "type": "string",
+              "example": "password123"
+            },
+            "email": {
+              "type": "string",
+              "example": "user@tempmail.com"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+  },
+  "parameters": []
+}
