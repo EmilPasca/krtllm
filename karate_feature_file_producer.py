@@ -7,7 +7,7 @@ import logging
 import time
 from oas_decomposer import process_openapi_file
 # Directory where the OAS description files are saved
-api_name = 'vapi'  # Replace with actual API name used in oas_decomposer.py
+api_name = 'VAmPI'  # Replace with actual API name used in oas_decomposer.py
 output_dir = f'output/{api_name}'
 log_dir = f'{output_dir}/log/'
 os.makedirs(output_dir, exist_ok=True)  # Ensure the directory exists
@@ -30,7 +30,7 @@ logger = logging.getLogger()
 
 
 # Set the base URL for the LLM
-openai.api_base = "http://192.168.1.204:4893/v1"
+openai.api_base = "http://192.168.0.101:4893/v1"
 
 # Function to generate Karate DSL test scenario using Open LLM
 def generate_karate_test_scenario(oas_json):
@@ -39,6 +39,29 @@ def generate_karate_test_scenario(oas_json):
 
     # Set up the prompt with the sanitized OAS JSON content
     prompt = (
+        "Write a Karate DSL scenario specifically targeting API security testing for vulnerabilities such as "
+        "Broken Object Level Authorization (BOLA), Authentication Flaws, and Authorization Issues. Tailor the scenarios "
+        "to handle and validate authentication tokens, ensure proper authorization checks, and avoid common pitfalls "
+        "like hardcoded endpoints. Structure the scenario with dynamic data handling for authentication tokens and "
+        "include domain-specific endpoint paths to enhance realism. The scenario structure is as follows:\n\n"
+        "Feature: [Feature Name] for BOLA and Auth Vulnerabilities\n"
+        "    Background:\n"
+        "         * url 'http://localhost:5000'\n"
+        "    Scenario: [ScenarioID]-[Scenario Name]\n"
+        "         Given path '[endpoint]'\n"
+        "         And request [request details]\n"
+        "         When method POST/PUT/GET/DELETE\n"
+        "         Then status 200/401/403\n"
+        "         And match response body to expected schema\n\n"
+        "Include only the essential Karate DSL code for the java feature scenario. Ensure the scenario comprehensively "
+        "covers the endpoint path, request headers, and JSON body (if required) with all fields as per the schema. "
+        "Emphasize dynamic data handling for tokens and sensitive fields, ensuring that setup steps common to BOLA and "
+        "authentication tests are detailed in the Background section. Gracefully handle potential error responses.\n"
+        "For scenario generation, use the specific OpenAPI specification provided:\n\n"
+        f"\"{oas_json_string}\"\n"
+    )
+
+    old_prompt = (
         "Write a Karate DSL scenario for API security testing, considering vulnerabilities like SQL injection, "
         "Broken Authentication, CSRF, and others. Depending on the required fields (body params, query params, "
         "assertion types and so on) "
@@ -63,7 +86,7 @@ def generate_karate_test_scenario(oas_json):
         f"\"{oas_json_string}\"\n"
     )
 
-    model = "Mistral OpenOrca"
+    model = "krtllm_model_v1_7.q8_0.gguf"
     logger.info(f"The following prompt was sent: \n {prompt} ")
 
     # Make the API request
@@ -86,7 +109,7 @@ def generate_karate_test_scenario(oas_json):
 def main():
     start_time = time.time()
     # Replace 'openapi_file.yaml' with the path to your actual OpenAPI file
-    process_openapi_file('input/vapi.yaml')
+    process_openapi_file('input/vampi_openapi3.yaml')
     decompose_duration = time.time() - start_time
     logger.info(f"Decomposition completed in {decompose_duration:.2f} seconds")
 
