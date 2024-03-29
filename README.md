@@ -62,7 +62,7 @@ KRTLLM - VamPI - [Karate Reports](results/v1/VAmPI/KRTLLM/report.md).
 ## Test Runs v1 - BOLA Finetuned Model
 
 For our BOLA targeted tests, we've trained Mistral 7B model, which is cited below:
-
+```
 @misc {emil_marian_pasca_2024,
 	author       = { {Emil Marian Pasca} },
 	title        = { OpenHermes-2.5-Mistral-7B-BOLA-Karate-Fine-Tuned (Revision 9b4bda8) },
@@ -71,4 +71,4 @@ For our BOLA targeted tests, we've trained Mistral 7B model, which is cited belo
 	doi          = { 10.57967/hf/1967 },
 	publisher    = { Hugging Face }
 }
-
+```
