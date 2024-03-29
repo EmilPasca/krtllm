@@ -55,5 +55,20 @@ We've documented our framework performance in terms of test generated, test resu
 -  `GeneratedFramework` for the test scripts and `KRTLLM/TestResults/` for the outcome of these tests.
 - We've included test cases and test results from other frameworks like `RESTest` for comparison.
 
-Test Runs v1:
+## Test Runs v1:
 KRTLLM - VamPI - [Karate Reports](results/v1/VAmPI/KRTLLM/report.md).
+
+
+## Test Runs v1 - BOLA Finetuned Model
+
+For our BOLA targeted tests, we've trained Mistral 7B model, which is cited below:
+
+@misc {emil_marian_pasca_2024,
+	author       = { {Emil Marian Pasca} },
+	title        = { OpenHermes-2.5-Mistral-7B-BOLA-Karate-Fine-Tuned (Revision 9b4bda8) },
+	year         = 2024,
+	url          = { https://huggingface.co/EmilMarian/OpenHermes-2.5-Mistral-7B-BOLA-Karate-Fine-Tuned },
+	doi          = { 10.57967/hf/1967 },
+	publisher    = { Hugging Face }
+}
+
